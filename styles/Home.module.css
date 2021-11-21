@@ -1,0 +1,6 @@
+.container {
+  height: 100vh;
+  min-width: 70px;
+  padding: 0 2rem;
+  background-image: linear-gradient(to right , #1890ff, rgb(72, 128, 72));
+}
