@@ -1,48 +1,79 @@
 import React from 'react';
 
-import { HeaderContainer } from './navBar.styles';
-import { Row, Col } from 'antd';
-import { Layout, Breadcrumb } from 'antd';
+import { HeaderContainer} from './navBar.styles';
+import { Row, Col, Button, Layout, Popover, Space,Menu, Dropdown } from 'antd';
 
 const {  Content } = Layout;
-
+  const menu = (
+    <Menu>
+      <Menu.Item>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+        تصميم موقع الكترونى
+        </a>
+      </Menu.Item>
+      <Menu.Item>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+        تصميم المتاجر الالكترونية
+        </a>
+      </Menu.Item>
+      <Menu.Item>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
+        تصميم التطبيقات 
+        </a>
+      </Menu.Item>
+      <Menu.Item>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+        تصميم الهوية التجارية الكاملة
+        </a>
+      </Menu.Item>
+      <Menu.Item>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+        التسويق الالكترونى
+        </a>
+      </Menu.Item>
+    </Menu>
+  );
 const NavBar = () => {
     return (
         <HeaderContainer>
-            <Row justify="center" >
-             <Col span={2}>
-                 الرئيسية
+       
+            <Row justify="center" align='middle'>
+            <Col flex="1 2 200px" pull='3' className='LGCON'>
+                 GIZA APPS
              </Col>
-             <Col span={2}>
-                 منتاجتنا
-             </Col>
-             <Col span={2}>
-                 خدمتنا
-             </Col>
-             <Col span={2}>
-                 سابقة اعمالنا
-             </Col>
-             <Col span={2}>
-                 عن الشركة
-             </Col>
-             <Col span={2}>
-                 تواصل معنا 
-             </Col>
-            </Row>
-            <Layout className="layout">
-    
-            <Content className="site-layout-background" style={{ margin: '24px 16px', padding: 24, minHeight: 280}}>
-             <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>شركة رائدة فى مجال البرمجيات بانوعها </Breadcrumb.Item>
-        
-           </Breadcrumb>
-              <div className="site-layout-content">من خلال تعزيز خطة التواجد الرقمي بشكل احترافي ، نحن ندعم عملك منذ بدايته
+             <Col flex="2 3 300px" push='1'>
+             <Space>
+                 <span className="MenueContent"> الرئيسية</span>
+                 <span className="MenueContent">منتجاتنا</span>
+                 <Dropdown overlay={menu} placement="bottomLeft" arrow>
+                   <Button type="text" className="MenueContent">خدمتنا</Button>
+                 </Dropdown>
+                 
+                 <span className="MenueContent">سابقة اعمالنا</span>
+                 <span className="MenueContent">عن الشركة</span>
+                 <span className="MenueContent">تواصل معنا</span>
+             </Space>
+            </Col>
+            </Row> 
+            <div className='ContentContainer'>
+                <h1 className='ContentTitle'>
+                شركة رائدة فى مجال البرمجيات بانوعها
+                </h1>
+                <p className='ContentDesc'>
+                من خلال تعزيز خطة التواجد الرقمي بشكل احترافي ، نحن ندعم عملك منذ بدايته
                  كفكرة.. وحتي بعد ان يصبح مشروع قائم بالفعل ، بواسطة مجموعة من ذوي
-                  الخبرة والمعرفة المحترفين من المصممين والمطورين</div>
-              </Content>
-             </Layout>
+                  الخبرة والمعرفة المحترفين من المصممين والمطورين 
+                </p>
+                <Space size='small'  >
+              <Button type="primary" size='large' className='btn-1'>سابقة اعمالنا </Button>
+              <Button type="primary" size='large' className='btn-2'>تواصل معنا </Button>
+            </Space>
+            </div>
+
         </HeaderContainer>
+
     )
 }
 
 export default NavBar
+ 
