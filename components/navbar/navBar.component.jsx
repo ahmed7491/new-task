@@ -2,30 +2,45 @@ import React from 'react';
 
 import { HeaderContainer } from './navBar.styles';
 import { Row, Col } from 'antd';
+import { Layout, Breadcrumb } from 'antd';
+
+const {  Content } = Layout;
 
 const NavBar = () => {
     return (
         <HeaderContainer>
-            <Row>
-             <Col lg={{ span: 2, offset: 3 }} lg={{ span: 1, offset: 3 }}>
+            <Row justify="center" >
+             <Col span={2}>
                  الرئيسية
              </Col>
-             <Col lg={{ span: 2, offset: 3 }} lg={{ span: 1, offset: 3 }}>
+             <Col span={2}>
                  منتاجتنا
              </Col>
-             <Col lg={{ span: 2, offset: 1 }} lg={{ span: 1, offset: 3 }}>
+             <Col span={2}>
                  خدمتنا
              </Col>
-             <Col lg={{ span: 2, offset: 1 }} lg={{ span: 1, offset: 2 }}>
+             <Col span={2}>
                  سابقة اعمالنا
              </Col>
-             <Col lg={{ span: 2, offset: 1 }} lg={{ span: 1, offset: 2 }}>
+             <Col span={2}>
                  عن الشركة
              </Col>
-             <Col lg={{ span: 2, offset: 1 }} lg={{ span: 1, offset: 2 }}>
+             <Col span={2}>
                  تواصل معنا 
              </Col>
             </Row>
+            <Layout className="layout">
+    
+            <Content className="site-layout-background" style={{ margin: '24px 16px', padding: 24, minHeight: 280}}>
+             <Breadcrumb style={{ margin: '16px 0' }}>
+              <Breadcrumb.Item>شركة رائدة فى مجال البرمجيات بانوعها </Breadcrumb.Item>
+        
+           </Breadcrumb>
+              <div className="site-layout-content">من خلال تعزيز خطة التواجد الرقمي بشكل احترافي ، نحن ندعم عملك منذ بدايته
+                 كفكرة.. وحتي بعد ان يصبح مشروع قائم بالفعل ، بواسطة مجموعة من ذوي
+                  الخبرة والمعرفة المحترفين من المصممين والمطورين</div>
+              </Content>
+             </Layout>
         </HeaderContainer>
     )
 }
