@@ -6,6 +6,10 @@ export const HeaderContainer = styled.div`
   direction: rtl;
   padding: 20px;
   margin-bottom: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+   
   background-image: linear-gradient(to right , #1890ff, rgb(72, 128, 72));
 
   
@@ -94,11 +98,15 @@ export const HeaderContainer = styled.div`
 }
 
 
-  @media screen and (max-width: 800px) {
-    height: 60px;
-    padding: 10px;
-    margin-bottom: 20px;
+  @media screen and (max-width: 768px) {
+    .ContentContainer{
+      
+    }
+    
   }
+
+
+
 `;
 
 

@@ -1,12 +1,30 @@
 import styled from "styled-components";
 
 export const ServiceContainer = styled.div`
-margin: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 64px;
-height: 100vh;
+margin-bottom: 72px;
+margin-top: 100vh;
+height: fit-content;
+
+.row-container{
+    max-width: 1200px;
+    width: 100%;
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 64px;
+}
+
+.headercon{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
 
 .HeaderContainer{
     font-weight: 500;
@@ -38,15 +56,33 @@ height: 100vh;
 
 .CardImg{
     justify-content: center;
+    align-items: center;
     padding: 10px;
 }
 
 .CardTitle{
     font-weight: 700;
     font-size: 20px;
+    width: fit-content;
     color: rgb(55, 71, 79);
     line-height: 24px;
     transition: color 0.5s ease 0s;
 }
+.ant-col-8{
+    height: 320px;
+    width: 275px;
+    padding: 24px;
+}
+
+.ant-space-vertical{
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
 
 `;

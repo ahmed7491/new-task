@@ -1,9 +1,8 @@
 import React from 'react';
 
 import { HeaderContainer} from './navBar.styles';
-import { Row, Col, Button, Layout, Popover, Space,Menu, Dropdown } from 'antd';
+import { Row, Col, Button, Space,Menu, Dropdown } from 'antd';
 
-const {  Content } = Layout;
   const menu = (
     <Menu>
       <Menu.Item>
@@ -40,13 +39,14 @@ const NavBar = () => {
             <Row justify="center" align='middle'>
             <Col flex="1 2 200px" pull='3' className='LGCON'>
                  GIZA APPS
+                 <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FfooterLogo.svg&w=32&q=75" alt="logo" />
              </Col>
              <Col flex="2 3 300px" push='1'>
              <Space>
                  <span className="MenueContent"> الرئيسية</span>
                  <span className="MenueContent">منتجاتنا</span>
                  <Dropdown overlay={menu} placement="bottomLeft" arrow>
-                   <Button type="text" className="MenueContent">خدمتنا</Button>
+                   <span className="MenueContent">خدمتنا</span>
                  </Dropdown>
                  
                  <span className="MenueContent">سابقة اعمالنا</span>

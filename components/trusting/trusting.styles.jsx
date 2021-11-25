@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TrustingContainer = styled.div`
-    height: 100vh;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,8 +57,11 @@ export const TrustingContainer = styled.div`
 .img-container{
     margin: 27px;
 }
-`;
 
-export const ImageContainer = styled.div`
-    
+
+@media screen and (max-width: 1024px) {
+   .reason{
+       width: 480px;
+   }
+  }
 `;
