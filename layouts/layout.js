@@ -1,21 +1,27 @@
 import React from 'react';
 
+import { Layout } from 'antd';
+
+
 import FooterComponent from '../components/foooter/footer.component';
-import NavBar from '../components/navbar/navBar.component';
-import StartPage from './home page/homePage';
+import HeaderComponent from './header/header.component';
+import { LayoutContainer } from './layout.styles'
 
+const { Header, Footer, Content } = Layout;
 
-import { LayoutContainer } from './layout.styles';
-
-const Layout = ({ children }) => {
+const Layouts = ({ children }) => {
     return (
         <LayoutContainer>
-            <NavBar/>
+        <head>
+        <title>Giza Apps</title>
+        </head>
+            <HeaderComponent/> 
             
-           <StartPage/> {children} 
-            <FooterComponent/>
-        </LayoutContainer>
+            <Content>{children} </Content> 
+             <FooterComponent/> 
+            </LayoutContainer>
+        
     )
 }
 
-export default Layout
+export default Layouts

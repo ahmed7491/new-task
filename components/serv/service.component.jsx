@@ -6,44 +6,46 @@ import { ServiceContainer } from './service.styles';
 const Service = () => {
     return (
         <ServiceContainer>
-              <Space direction='vertical' size='large' align='center' className='row-container'>
-                  <div className='headercon'>
+              <Row gutter={[0,64]}  className='row-container'>
+                  <Col className='headercon'>
                         <h1 className='HeaderContainer'> خدماتنا</h1>
                         <p className='contentDsec'>نقوم  بتقديم جميع الخدمات  التى تعزز  من تواجدك الرقمى  باحترافية بداية من برمجة المواقع وحتى التسويق</p>
-                  </div>
-                  <Row justify='center'>
-                      <Col span={8}>
-                      <Space direction="vertical" size='large' >
+                  </Col>
+                  <Col>
+                  <Row justify='center'  align='middle'>
+                      <Col xs={24} lg={8} >
+                      <Space direction="vertical" size={[48]} align='center' className='CardContaier'>
                             <img  src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservice1.svg&w=96&q=75" alt="shop" className='CardImg' />
                             <span className='CardTitle'>تصميم التطبيقات</span>
                       </Space>
                       </Col>
-                      <Col span={8}>
-                      <Space direction="vertical" size='large' >
+                      <Col xs={24} lg={8} >
+                      <Space direction="vertical" size={[48]} className='CardContaier'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservice2.svg&w=96&q=75"  alt="shop" className='CardImg'/>
                         <span className='CardTitle'>تصميم المتاجر الالكترونية</span>
                       </Space>
                       </Col>
-                      <Col span={8}>
-                      <Space direction="vertical" size='large' >
+                      <Col xs={24} lg={8} >
+                      <Space direction="vertical" size={[48]} className='CardContaier' >
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservice3.svg&w=96&q=75"  alt="shop" className='CardImg'/>
                         <span className='CardTitle'>تصميم المواقع الالكترونية</span>
                       </Space>
                       </Col>
-                      <Col span={8}>
-                      <Space direction="vertical" size='large' >
+                      <Col xs={24} lg={8} >
+                      <Space direction="vertical" size={[48]} className='CardContaier' >
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservice4.svg&w=96&q=75"  alt="shop" className='CardImg'/>
                         <span className='CardTitle'>التسويق الالكترونى</span>
                       </Space>
                       </Col>
-                      <Col span={8}>
-                      <Space direction="vertical" size='large' >
+                      <Col xs={24} lg={8} >
+                      <Space direction="vertical" size={[48]} className='CardContaier'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservice5.svg&w=96&q=75"  alt="shop" className='CardImg'/>
                         <span className='CardTitle'>تصميم الهوية التجارية الكاملة</span>
                       </Space>
                       </Col>
                   </Row>
-              </Space>
+                  </Col>
+              </Row>
         </ServiceContainer>
     )
 }

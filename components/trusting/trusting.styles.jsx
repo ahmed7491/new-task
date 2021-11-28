@@ -24,6 +24,10 @@ export const TrustingContainer = styled.div`
     text-align: center;
     color: #3386a7;
     margin-bottom: 32px;
+
+    @media screen and (max-width: 768px){
+        font-size: 34px;
+    }
 }
 
 .contentDesc{
@@ -33,6 +37,9 @@ export const TrustingContainer = styled.div`
     font-weight: 500;
     font-size: 20px;
     line-height: 27px;
+    @media screen and (max-width: 768px){
+        font-size: 16px;
+    }
 }
 
 .ReasonsContainer{
@@ -42,6 +49,9 @@ export const TrustingContainer = styled.div`
 .reason{
     width: 585px;
     height: 160px;
+        @media screen and (max-width: 1024px) {
+            width: 480px;
+        }
 }
 
 .reasonTitle{
@@ -59,9 +69,9 @@ export const TrustingContainer = styled.div`
 }
 
 
-@media screen and (max-width: 1024px) {
-   .reason{
-       width: 480px;
-   }
+
+
+  @media screen and (max-width: 768px) {
+    max-width: 700px;
   }
 `;

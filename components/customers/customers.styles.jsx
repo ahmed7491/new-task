@@ -8,6 +8,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 64px;
+direction: rtl;
 
 
 .HeaderContainer{
@@ -19,7 +20,17 @@ gap: 64px;
     border-bottom: 4px  solid rgb(44, 218, 157);
     color: rgb(51, 51, 51);
     margin-bottom: 32px;
+    @media screen and (max-width: 768px){
+        max-width: 16%;
+    }
    
+}
+
+.imgContainer{
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 110px;
+    overflow: hidden;
 }
 
 .img-logo{

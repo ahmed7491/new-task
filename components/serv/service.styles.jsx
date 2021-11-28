@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ServiceContainer = styled.div`
 margin-bottom: 72px;
 margin-top: 100vh;
-height: fit-content;
+
 
 .row-container{
     max-width: 1200px;
@@ -14,6 +14,8 @@ height: fit-content;
     margin-right: auto;
     margin-left: auto;
     gap: 64px;
+    direction: rtl;
+    justify-content: center;
 }
 
 .headercon{
@@ -43,15 +45,22 @@ height: fit-content;
     color: black;
 }
 
-.CardContainer{
-    width: 340;
+.CardContaier{
+    width: 338px;
     height: 200px;
-    margin: 25;
+    padding: 24px;
     cursor: pointer;
-    justify-content: center;
+    border: 1px solid red;
     :hover .CardTitle{
         color: #269dbb;
     }
+    @media screen and (max-width: 768px) {
+    width: 620px;
+  }
+  @media screen and (max-width: 425px) {
+    width: 346px;
+  }
+  
 }
 
 .CardImg{
@@ -85,4 +94,7 @@ height: fit-content;
     margin-bottom: 20px;
   }
 
+  @media screen and (max-width: 786px) {
+    max-width: 700px;
+  }
 `;

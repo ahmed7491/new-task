@@ -25,28 +25,7 @@ export const HeaderContainer = styled.div`
       color: white;
   }
 
-.MenueContent{  
-  margin: 20px;
-  margin-top: 10px;
-  cursor: pointer;
-  font-weight: 500;
-  color:white;
-  background-color: transparent;
-  border: none;
-  transition: color 1s;
-  :hover{
-    color: #2cda9d;
-  }
-}
 
-
-.LGCON{
-  font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-  align-items: center;
-  cursor: pointer;
-}
 
 .CartDrop{
   background-color: transparent;
@@ -74,6 +53,9 @@ export const HeaderContainer = styled.div`
     line-height: 48px;
     min-width: 310px;
     user-select: none;
+    @media screen and (max-width: 786px) {
+    font-size: 34px;
+  }
     
 }
 .ContentDesc{
@@ -82,9 +64,11 @@ export const HeaderContainer = styled.div`
     width: 100%;
     text-align: center;
     line-height: 34px;
+
+@media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 }
-
-
 .btn-1{
   background-color: #285474;
   border: 1px solid #285474;

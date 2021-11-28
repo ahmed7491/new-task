@@ -16,7 +16,7 @@ const Trusting = () => {
             </div>
             
                 <Row gutter={[12, 12]} justify='center' className='ReasonsContainer'>
-                    <Col span={12} >
+                    <Col xs={24} lg={12} >
                         <Space className='reason'>
                             <div className='img-container'>
                                 <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fcheck-circle.svg&w=32&q=75" alt="mark" />
@@ -27,7 +27,7 @@ const Trusting = () => {
                             </div>
                         </Space>
                     </Col>
-                    <Col span={12} >
+                    <Col xs={24} lg={12} >
                         <Space className='reason'>
                             <div className='img-container'>
                                 <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fcheck-circle.svg&w=32&q=75" alt="mark" />
@@ -39,7 +39,7 @@ const Trusting = () => {
                         </Space>
                     </Col>
 
-                    <Col span={12} >
+                    <Col xs={24} lg={12} >
                         <Space className='reason'>
                             <div className='img-container'>
                                 <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fcheck-circle.svg&w=32&q=75" alt="mark" />
@@ -50,7 +50,7 @@ const Trusting = () => {
                             </div>
                         </Space>
                     </Col>
-                    <Col span={12} >
+                    <Col xs={24} lg={12} >
                         <Space className='reason'>
                             <div className='img-container'>
                                 <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fcheck-circle.svg&w=32&q=75" alt="mark" />
@@ -61,7 +61,7 @@ const Trusting = () => {
                             </div>
                         </Space>
                     </Col>
-                    <Col span={12} >
+                    <Col xs={24} lg={12} >
                         <Space className='reason'>
                             <div className='img-container'>
                                 <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fcheck-circle.svg&w=32&q=75" alt="mark" />
@@ -72,7 +72,7 @@ const Trusting = () => {
                             </div>
                         </Space>
                     </Col>
-                    <Col span={12} >
+                    <Col xs={24} lg={12} >
                         <Space className='reason'>
                             <div className='img-container'>
                                 <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fcheck-circle.svg&w=32&q=75" alt="mark" />
