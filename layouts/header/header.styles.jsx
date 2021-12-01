@@ -6,9 +6,14 @@ export const HeaderContainer = styled.header`
   direction: rtl;
   padding: 20px;
   margin-bottom: 25px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    -webkit-transform: translate3D(0, 0, 0);
+    -ms-transform: translate3D(0, 0, 0);
+    transform: translate3D(0, 0, 0);
 
 
 .MenueContent{  
@@ -25,6 +30,13 @@ export const HeaderContainer = styled.header`
   }
 }
 
+.row-container{
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    }
 
 .LGCON{
   font-size: 20px;
@@ -32,5 +44,8 @@ export const HeaderContainer = styled.header`
     color: #fff;
   align-items: center;
   cursor: pointer;
+    line-height: 27px;
+    height: 27px;
+    margin-left: 8px;
 }
  `;

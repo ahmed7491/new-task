@@ -7,24 +7,24 @@ import { HeaderContainer } from './header.styles';
 const menu = (
     <Menu>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+        <Link  href="services/design-web">
         تصميم موقع الكترونى
-        </a>
+        </Link>
       </Menu.Item>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+        <Link href="services/e-commerce">
         تصميم المتاجر الالكترونية
-        </a>
+        </Link>
       </Menu.Item>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
+        <Link href="services/mobile-design">
         تصميم التطبيقات 
-        </a>
+        </Link>
       </Menu.Item>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+        <Link href="services/design-identity">
         تصميم الهوية التجارية الكاملة
-        </a>
+        </Link>
       </Menu.Item>
       <Menu.Item>
         <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
@@ -37,25 +37,27 @@ const menu = (
 const HeaderComponent = () => {
     return (
         <HeaderContainer>
-            <Row justify="center" align='middle'>
-            <Col flex="1 2 200px" pull='3' className='LGCON'>
-                 GIZA APPS
+          <div className='row-container'>
+            <Row justify='center' align='middle' >
+            <Col xs={12} xl={4} >
+                 <span className='LGCON'>GIZA APPS</span> 
                  <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FfooterLogo.svg&w=32&q=75" alt="logo" />
              </Col>
-             <Col flex="2 3 300px" push='1'>
+             <Col xs={0} xl={16}>
              <Space>
-                 <span className="MenueContent"> الرئيسية</span>
-                 <span clspanssName="MenueContent">منتجاتنا</span>
+                 <Link href="/"><span className='MenueContent' > الرئيسية</span></Link> 
+                 <span className='MenueContent'>منتجاتنا</span>
                  <Dropdown overlay={menu} placement="bottomLeft" arrow>
-                   <span className="MenueContent">خدمتنا</span>
+                   <span className='MenueContent'>خدمتنا</span>
                  </Dropdown>
                  
-                 <span className="MenueContent">سابقة اعمالنا</span>
-                  <span className="MenueContent">عن الشركة</span>
-                 <span className="MenueContent">تواصل معنا</span>
+                 <span className='MenueContent'>سابقة اعمالنا</span>
+                  <span className='MenueContent'>عن الشركة</span>
+                 <span className='MenueContent'>تواصل معنا</span>
              </Space>
             </Col>
             </Row> 
+            </div>
         </HeaderContainer>
     )
 }
