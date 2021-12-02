@@ -17,41 +17,41 @@ const designWebsite = () => {
                 <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2FWeb-Development.svg&w=640&q=75" alt="" />
             </div>
             <div className="feature">
-                <Typography>
+                <Typography className='row-container'>
                     <Title className='feature-title'>مميزات الاموقع الالكترونى من جيزة ابس </Title>
                     <Paragraph>
-                        <Row justify='center' >
-                            <Col span={4}>
+                        <Row  >
+                            <Col span={6} style={{marginBottom:'73px'}}>
                                 <Space direction='vertical' size='large' align='center'><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature4.svg&w=96&q=75" alt="" />
                                 <h5>ربط بوسائل التواصل الاجتماعى</h5>
                                 </Space>
                             </Col>
-                            <Col span={4}>
+                            <Col span={6} style={{marginBottom:'73px'}}>
                                 <Space direction='vertical' size='large' align='center'><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature3.svg&w=96&q=75" alt="" />
                                 <h5>لوحة تحكم سهلة</h5>
                                 </Space>
                             </Col>
-                            <Col span={4}>
+                            <Col span={6} style={{marginBottom:'73px'}}>
                                 <Space direction='vertical' size='large' align='center'><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature2.svg&w=96&q=75" alt="" />
                                 <h5>موقع باكثر من لغة</h5></Space>
                             </Col>
-                            <Col span={4}>
+                            <Col span={6} style={{marginBottom:'73px'}}>
                                 <Space direction='vertical' size='large' align='center'><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature1.svg&w=96&q=75" alt="" />
                                 <h5>موقع متناسب مع نشاطك التجارى</h5></Space>
                             </Col>
-                            <Col span={4}>
+                            <Col span={6} style={{marginBottom:'73px'}}>
                                 <Space direction='vertical' size='large' align='center'><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature8.svg&w=96&q=75" alt="" />
                                 <h5>تخطيط وتقسيم جيد لعلامات التبويت</h5></Space>
                             </Col>
-                            <Col span={4}>
+                            <Col span={6} style={{marginBottom:'73px'}}>
                                 <Space direction='vertical' size='large' align='center'><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature7.svg&w=96&q=75" alt="" />
                                 <h5>يحتوى على معايير وشهادات الامان</h5></Space>
                             </Col>
-                            <Col>
+                            <Col span={6} style={{marginBottom:'73px'}}>
                                 <Space direction='vertical' size='large' align='center'><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature6.svg&w=96&q=75" alt="" />
                                 <h5>متجاوب مع جميع الاجهزة</h5></Space>
                             </Col>
-                            <Col span={4}>
+                            <Col span={6} style={{marginBottom:'73px'}}>
                                 <Space direction='vertical' size='large' align='center'><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature5.svg&w=96&q=75" alt="" />
                                 <h5>متوافق مع معايير السيو</h5></Space>
                             </Col>
@@ -60,12 +60,12 @@ const designWebsite = () => {
                 </Typography>
             </div>
             <div className="ask-serv">
-                <h2 className="feature-title">صمم موقعك الان</h2>
+                <h2 className="serv-title">صمم موقعك الان</h2>
                 <Button type="primary" shape="round" className='btn-3'>اطلب الخدمة الان</Button>
             </div>
             <div className="bottom-sec">
             <h2 className="feature-title">تواصل معنا </h2>
-            <p>نسعد ياستقبال استفساراتكم واتصالاتكم عبر</p>
+            <p className='cont-des'>نسعد ياستقبال استفساراتكم واتصالاتكم عبر</p>
             <div className='cards'>
             <Card className="card-cont">
                 <img src="https://www.gizaapps.com/static/images/whatsapp5.svg" alt="" />

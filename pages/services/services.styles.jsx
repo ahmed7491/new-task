@@ -11,13 +11,13 @@ direction: rtl;
     align-items: center;
     align-content: center;
     flex-direction: column;
-    margin-top: 80px;
-    margin-bottom: 0px;
     padding-top: 32px;
 }
 .intro-header{
     font-weight: 500;
     font-size: 48px;
+    margin: 0px auto;
+    padding-bottom: 10px;
     width: fit-content;
     border-bottom: 4px  solid rgb(44, 218, 157);
     color: #333333;
@@ -33,7 +33,7 @@ direction: rtl;
     color: #37474f;
 }
 
-feature{
+/* feature{
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 160px;
@@ -42,13 +42,20 @@ feature{
     align-items: center;
     align-content: center;
     flex-direction: column;
-}
+} */
 
 .feature-title{
-    margin: 0px auto 82px;
+    margin: 130px auto 82px;
     font-size: 34px;
     color: rgb(55, 71, 79);
     width: fit-content;
+}
+
+.serv-title{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 48px;
+    color: rgb(55, 71, 79);
 }
 
 .btn-3{
@@ -230,5 +237,56 @@ feature{
     flex-direction: column;
     gap: 28px;
     margin-bottom: 68px;
+}
+
+.img-carsoul{
+    max-height: 260px;
+    width: 320px;
+    padding: 0px 10px;
+}
+
+.header-mob{
+    margin: 156px auto 0px;
+    width: fit-content;
+    color: rgb(55, 71, 79);
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+.andorid-ios{
+    width: 571px;
+    height: 239px;
+    border-radius: 16px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 32px;
+    margin: 64px 0px 140px; 
+}
+.green{
+    background: linear-gradient(132.9deg, rgb(99, 247, 161) 1.3%, rgb(39, 174, 96) 98.06%);
+}
+.blue{
+    background: linear-gradient(321.69deg, rgb(68, 129, 235) 0%, rgb(4, 190, 254) 100%);
+}
+
+.description{
+    color: rgb(97, 113, 121);
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.marketing-services{
+    width: 100%;
+    height: fit-content;
+    background: rgb(251, 251, 251);
+    text-align: center;
+    padding-top: 154px;
+    margin-top: 154px;
 }
 `;

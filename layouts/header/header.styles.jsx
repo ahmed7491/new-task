@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
   padding: 20px;
   margin-bottom: 25px;
   position: relative;
+  /* position: ${(props)=>(props.path == "/"? "unset" : "fixed")}; */
     top: 0;
     left: 0;
     right: 0;
@@ -14,6 +15,7 @@ export const HeaderContainer = styled.header`
     -webkit-transform: translate3D(0, 0, 0);
     -ms-transform: translate3D(0, 0, 0);
     transform: translate3D(0, 0, 0);
+    
 
 
 .MenueContent{  
@@ -25,6 +27,7 @@ export const HeaderContainer = styled.header`
   background-color: transparent;
   border: none;
   transition: color 1s;
+  color: ${(props) => (props.path == "/" ? "#fff" : "#37474F")};
   :hover{
     color: #2cda9d;
   }
@@ -47,5 +50,6 @@ export const HeaderContainer = styled.header`
     line-height: 27px;
     height: 27px;
     margin-left: 8px;
+    color: ${(props) => (props.path == "/" ? "#fff" : "#37474F")};
 }
  `;

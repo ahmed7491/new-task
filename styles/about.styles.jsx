@@ -36,6 +36,47 @@ export const AboutContainer = styled.div`
     border-bottom: 4px solid rgb(44, 218, 157);
     }
 
+    .portHeader{
+    font-weight: 700;
+    font-size: 48px;
+    color: rgb(55, 71, 79);
+    padding-bottom: 10px;
+    border-bottom: 4px solid rgb(44, 218, 157);
+    width: fit-content;
+    margin: 50px auto 32px;
+    }
+
+    .port-desc{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(55, 71, 79);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+    }
+
+    .portfiles{
+    
+    width: 100%;
+
+    @media screen and (min-width: 800px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    }
+    
+    .port-img{
+        width: 100%;
+    text-align: center;
+    padding: 10px;    }
+
+    .jWwTOA .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+        color:  #2cda9d;
+
+    }
+
     .content-desc{
         max-width: 900px;
         margin: 0px auto;
@@ -48,6 +89,7 @@ export const AboutContainer = styled.div`
     margin-right: auto;
     margin-left: auto;
     }
+    
 
     .inex-sec{
         width: 100%;

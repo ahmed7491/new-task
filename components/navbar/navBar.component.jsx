@@ -19,8 +19,8 @@ const NavBar = () => {
                  كفكرة.. وحتي بعد ان يصبح مشروع قائم بالفعل ، بواسطة مجموعة من ذوي
                   الخبرة والمعرفة المحترفين من المصممين والمطورين 
                 </p>
-                <Space size='small'  >
-              <Button type="primary" size='large' onClick={()=>{history.pushState('')}} className='btn-1'>سابقة اعمالنا </Button>
+                <Space size='large'>
+              <Button type="primary" size='large' className='btn-1'>سابقة اعمالنا </Button>
               <Button type="primary" size='large' className='btn-2'>تواصل معنا </Button>
             </Space>
             </div>

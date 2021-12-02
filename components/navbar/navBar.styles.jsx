@@ -70,6 +70,10 @@ export const HeaderContainer = styled.div`
   }
 }
 .btn-1{
+    width: 148px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
   background-color: #285474;
   border: 1px solid #285474;
   border-radius: 36px;
@@ -79,6 +83,10 @@ export const HeaderContainer = styled.div`
   background-color: #2cda9d;
   border: 1px solid #2cda9d;
   border-radius: 36px;
+    width: 148px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 

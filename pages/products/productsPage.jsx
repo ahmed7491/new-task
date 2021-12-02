@@ -18,8 +18,8 @@ const routeChange = () => {
 const Products = () => {
   return (
     <ProductsContainer>
-      <div>
-        <Row justify="center" className="row-container">
+      <div className="row-container">
+        <Row justify="center" >
           <Col xs={24} md={12}>
             <Typography style={{ maxWidth: "500px" }}>
               <Title className="product-header">منتجاتنا</Title>
@@ -34,8 +34,8 @@ const Products = () => {
           </Col>
         </Row>
       </div>
-      <div>
-        <Typography className="upper-section">
+      <div className='row-container'>
+        <Typography className="upper-section ">
           <Title className="upper-header">بحر ستور</Title>
           <Paragraph className="product-desc">
             {" "}
@@ -44,7 +44,7 @@ const Products = () => {
             وتحسين وزيادة نسب المبيعات والارباح{" "}
           </Paragraph>
         </Typography>
-      </div>
+      
       <Row align="middle">
         <Col xs={24} lg={12}>
           <h3 className="targetHeader">هدفها:</h3>
@@ -83,6 +83,8 @@ const Products = () => {
           />
         </Col>
       </Row>
+      </div>
+
       <div className="bottom-section">
         <Space direction="vertical" size="middle">
           <p style={{ color: "#FFF", maxWidth: "723px" }} className="subText">

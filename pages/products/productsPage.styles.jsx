@@ -7,8 +7,16 @@ direction: rtl;
 
 
 .row-container{
-    max-width: 1170px;
-    margin: 137px 0;
+    
+    
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 96px;
+    margin-bottom: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
 .product-header{

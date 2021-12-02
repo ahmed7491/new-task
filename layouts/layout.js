@@ -8,7 +8,7 @@ import { LayoutContainer } from './layout.styles'
 const Layouts = ({ children }) => {
     return (
         <LayoutContainer>
-                  <HeaderComponent/>
+         <HeaderComponent/>
         {children}
         <FooterComponent/>  
         </LayoutContainer>

@@ -3,40 +3,54 @@ import React from 'react'
 import Link from "next/link"
 import { Row, Col, Button, Space,Menu, Dropdown } from 'antd';
 import { HeaderContainer } from './header.styles';
+import { useRouter } from 'next/router';
 
+const menuUrl = {
+  home: "/",
+  designWeb: "/services/design-web",
+  E_Commerce: "/services/e-commerce",
+  mobilDesign: "/services/mobile-design",
+  sedignId: "/services/design-identity",
+  marketing: "/services/marketing",
+  about: "/about",
+  ourProducts: "/products/productsPage",
+  portfile: "/portfile",
+  contact: "/contact"
+}
 const menu = (
     <Menu>
       <Menu.Item>
-        <Link  href="services/design-web">
+        <Link  href={menuUrl.designWeb}>
         تصميم موقع الكترونى
         </Link>
       </Menu.Item>
       <Menu.Item>
-        <Link href="services/e-commerce">
+        <Link href={menuUrl.E_Commerce}>
         تصميم المتاجر الالكترونية
         </Link>
       </Menu.Item>
       <Menu.Item>
-        <Link href="services/mobile-design">
+        <Link href={menuUrl.mobilDesign}>
         تصميم التطبيقات 
         </Link>
       </Menu.Item>
       <Menu.Item>
-        <Link href="services/design-identity">
+        <Link href={menuUrl.sedignId}>
         تصميم الهوية التجارية الكاملة
         </Link>
       </Menu.Item>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+        <Link href={menuUrl.marketing}>
         التسويق الالكترونى
-        </a>
+        </Link>
       </Menu.Item>
     </Menu>
   );
 
 const HeaderComponent = () => {
+  const {pathname}=useRouter()
     return (
-        <HeaderContainer>
+        <HeaderContainer path={pathname}>
           <div className='row-container'>
             <Row justify='center' align='middle' >
             <Col xs={12} xl={4} >
@@ -46,14 +60,14 @@ const HeaderComponent = () => {
              <Col xs={0} xl={16}>
              <Space>
                  <Link href="/"><span className='MenueContent' > الرئيسية</span></Link> 
-                 <span className='MenueContent'>منتجاتنا</span>
+                 <Link href={menuUrl.ourProducts}><span className='MenueContent'>منتجاتنا</span></Link> 
                  <Dropdown overlay={menu} placement="bottomLeft" arrow>
                    <span className='MenueContent'>خدمتنا</span>
                  </Dropdown>
                  
-                 <span className='MenueContent'>سابقة اعمالنا</span>
-                  <span className='MenueContent'>عن الشركة</span>
-                 <span className='MenueContent'>تواصل معنا</span>
+                 <Link href={menuUrl.portfile}><span className='MenueContent'>سابقة اعمالنا</span></Link>
+                 <Link href={menuUrl.about}><span className='MenueContent'>عن الشركة</span></Link> 
+                 <Link href={menuUrl.contact}><span className='MenueContent'>تواصل معنا</span></Link>
              </Space>
             </Col>
             </Row> 

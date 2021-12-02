@@ -50,7 +50,7 @@ margin-top: 100vh;
     height: 200px;
     padding: 24px;
     cursor: pointer;
-    border: 1px solid red;
+    
     :hover .CardTitle{
         color: #269dbb;
     }
