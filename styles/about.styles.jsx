@@ -15,7 +15,7 @@ export const AboutContainer = styled.div`
         background-size: cover;
     }    
 
-    .content{
+    /* .content{
     color: black;
     top: 50%;
     left: 50%;
@@ -24,7 +24,7 @@ export const AboutContainer = styled.div`
     text-align: center;
     min-width: 280px;
     width: 100%;
-    }
+    } */
 
     .intro-header{
     color: rgb(55, 71, 79);
@@ -70,7 +70,10 @@ export const AboutContainer = styled.div`
     .port-img{
         width: 100%;
     text-align: center;
-    padding: 10px;    }
+    padding: 10px;    
+    overflow: hidden;
+    cursor: pointer;
+}
 
     .jWwTOA .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
         color:  #2cda9d;
@@ -136,5 +139,39 @@ export const AboutContainer = styled.div`
     width: 132px;
     height: 48px;
     }
-   
+   .map-item{
+       margin-bottom: 70px;
+       line-height: 34px;
+    color: rgb(78, 78, 78);
+   }
+
+   .country{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 34px;
+    height: 48px;
+    margin-bottom: 16px;
+    color: rgb(55, 71, 79);
+   }
+
+   .ant-input:placeholder-shown{
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid rgba(40, 84, 116, 0.16);
+    padding: 0px 20px;
+   }
+   .ant-form-item-control-input-content{
+       padding: 0px 15px;
+   }
+   .ant-btn-round.ant-btn-lg{
+    width: 104px;
+    height: 48px;
+    background-color: rgb(40, 84, 116);
+    border-radius: 36px;
+    margin: 22px 0px;
+    border-color: rgb(40, 84, 116);
+   }
 `;

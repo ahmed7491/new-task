@@ -21,7 +21,7 @@ const Products = () => {
       <div className="row-container">
         <Row justify="center" >
           <Col xs={24} md={12}>
-            <Typography style={{ maxWidth: "500px" }}>
+            <Typography className='product-content'>
               <Title className="product-header">منتجاتنا</Title>
               <Paragraph className="product-desc">
                 نؤمن بأن نجاحنا مرهون بنجاح عملائنا، ولذلك قمنا باستلهام
@@ -30,7 +30,8 @@ const Products = () => {
             </Typography>
           </Col>
           <Col xs={24} md={12}>
-            <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FLeadership.svg&w=1920&q=75" />
+            <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FLeadership.svg&w=1920&q=75" className='img-peoduct'/>
+            
           </Col>
         </Row>
       </div>

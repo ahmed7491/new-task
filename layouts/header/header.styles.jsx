@@ -7,8 +7,10 @@ export const HeaderContainer = styled.header`
   padding: 20px;
   margin-bottom: 25px;
   position: relative;
-  /* position: ${(props)=>(props.path == "/"? "unset" : "fixed")}; */
-    top: 0;
+  position: ${(props)=>(props.path !== "/"? "fixed" : null)};
+  background-color: ${(props)=>(props.path !== "/"? "#fff" : null)};
+  box-shadow: ${(props)=>(props.path !== "/"? "rgb(51 51 51 / 4%) 0px 4px 4px" : null)} ;    
+  top: 0;
     left: 0;
     right: 0;
     z-index: 99;
@@ -24,7 +26,6 @@ export const HeaderContainer = styled.header`
   cursor: pointer;
   font-weight: 500;
   color:white;
-  background-color: transparent;
   border: none;
   transition: color 1s;
   color: ${(props) => (props.path == "/" ? "#fff" : "#37474F")};

@@ -47,22 +47,31 @@ const menu = (
     </Menu>
   );
 
+
 const HeaderComponent = () => {
   const {pathname}=useRouter()
     return (
         <HeaderContainer path={pathname}>
           <div className='row-container'>
             <Row justify='center' align='middle' >
-            <Col xs={12} xl={4} >
-                 <span className='LGCON'>GIZA APPS</span> 
-                 <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FfooterLogo.svg&w=32&q=75" alt="logo" />
+              <Link href='/'>
+            <Col xs={12} xl={4} className='LGCON'>
+                 <span className='LGCON'>GIZA APPS</span>
+                 {
+                 pathname == "/" ?
+                    <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FfooterLogo.svg&w=32&q=75" alt="logo" />:
+                    <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FnewLogoGiza.svg&w=32&q=75" alt="logo" />
+
+                 
+                 } 
              </Col>
+             </Link>
              <Col xs={0} xl={16}>
              <Space>
                  <Link href="/"><span className='MenueContent' > الرئيسية</span></Link> 
                  <Link href={menuUrl.ourProducts}><span className='MenueContent'>منتجاتنا</span></Link> 
                  <Dropdown overlay={menu} placement="bottomLeft" arrow>
-                   <span className='MenueContent'>خدمتنا</span>
+                   <span className='MenueContent'> خدمتنا&#709;</span>
                  </Dropdown>
                  
                  <Link href={menuUrl.portfile}><span className='MenueContent'>سابقة اعمالنا</span></Link>
