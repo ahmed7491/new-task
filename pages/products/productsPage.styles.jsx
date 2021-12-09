@@ -7,8 +7,7 @@ direction: rtl;
 
 
 .row-container{
-    
-    
+
     max-width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
@@ -26,6 +25,15 @@ direction: rtl;
     border-bottom: 4px  solid rgb(44, 218, 157);
     color: #333333;
     margin-bottom: 32px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 34px;
+
+    }
+    
+
 }
 
 .product-desc{
@@ -33,8 +41,10 @@ direction: rtl;
     line-height: 27px;
     font-weight: 500;
     color: rgb(55, 71, 79);
-    @media screen and (min-width: 768px){
-
+    @media screen and (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 18px;
     }
 }
 
@@ -51,13 +61,12 @@ direction: rtl;
     text-align: center;
 }
 .upper-header{
-    font-weight: 700;
     font-size: 34px;
     text-align: center;
     line-height: 48px;
     color: rgb(40, 84, 116);
 
-    @media screen and (min-width: 768px){
+    @media screen and (max-width: 768px){
         font-size: 24px;
     }
     
@@ -71,7 +80,7 @@ direction: rtl;
     margin-bottom: 24px;
     max-width: 450px;
     
-    @media screen and (min-width: 768px){
+    @media screen and (max-width: 768px){
         font-size: 18px;
 
     }
@@ -83,7 +92,7 @@ direction: rtl;
     color: rgb(76, 92, 100);
     margin-bottom: 24px;
 
-    @media screen and (min-width: 768px){
+    @media screen and (max-width: 768px){
         font-size: 20px;
     margin-bottom: 10px;
     }
@@ -96,6 +105,11 @@ direction: rtl;
     border-color: rgb(44, 218, 157);
     font-size: 16px;
     margin: 30px 0px;
+    @media screen and (max-width: 576px){
+        font-size: 14px;
+    width: 156px;
+
+    }
 }
 .bottom-section{
     width: 100%;
@@ -114,9 +128,9 @@ direction: rtl;
 
 .img-peoduct{
     width: 100%;
-    height: 193px;
+  height: 197px;
 
-    @media screen and (min-width: 768px){
+    @media screen and (max-width: 768px){
         width: 355px;
     }
 }

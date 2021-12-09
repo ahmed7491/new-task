@@ -12,7 +12,7 @@ const { TabPane } = Tabs;
 
 const selAll = {
   id: "1",
-  tabName: "المواقع الالكترونية ",
+  tabName: "عرض الكل  ",
   images: [
     {
       id: "1",

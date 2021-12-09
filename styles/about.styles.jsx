@@ -13,18 +13,19 @@ export const AboutContainer = styled.div`
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-    }    
 
-    /* .content{
-    color: black;
-    top: 50%;
-    left: 50%;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    min-width: 280px;
-    width: 100%;
-    } */
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 14px;
+    }
+  }
+        
 
     .intro-header{
     color: rgb(55, 71, 79);
@@ -34,6 +35,13 @@ export const AboutContainer = styled.div`
     font-weight: 500;
     padding-bottom: 10px;
     border-bottom: 4px solid rgb(44, 218, 157);
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
     }
 
     .portHeader{
@@ -44,6 +52,10 @@ export const AboutContainer = styled.div`
     border-bottom: 4px solid rgb(44, 218, 157);
     width: fit-content;
     margin: 50px auto 32px;
+
+    @media screen and (max-width: 768px){
+        font-size: 24px;
+    }
     }
 
     .port-desc{
@@ -83,6 +95,9 @@ export const AboutContainer = styled.div`
     .content-desc{
         max-width: 900px;
         margin: 0px auto;
+        @media screen and (min-width: 992px) {
+      max-width: 90%;
+    }
     }
 
     .row-container{
@@ -103,20 +118,57 @@ export const AboutContainer = styled.div`
     h2{
         font-size: 34px;
     color: rgb(55, 71, 79);
+    
     }
 
-    .content{   
+    .content{
     width: 100%;
     height: 100%;
-    color: rgb(76, 92, 100);
+    color: #4c5c64;
     font-weight: 500;
     font-size: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    -webkit-box-pack: center;
     justify-content: center;
+    @media screen and (min-width: 992px) {
+      text-align: start;
     }
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+    }
+  }
+
+.contact-container{
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+}
+
+  .heade-con{
+    font-size: 34px;
+    color: #37474f;
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  .img-container {
+    width: 100%;
+    height: 400px;
+
+    @media screen and (min-width: 992px) {
+      height: 500px;
+      width: 500px;
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 280px;
+    }
+  }
 
     .feed-back{
     width: 100%;
@@ -143,7 +195,16 @@ export const AboutContainer = styled.div`
        margin-bottom: 70px;
        line-height: 34px;
     color: rgb(78, 78, 78);
+     font-weight : 500; 
+     font-size: 24px; 
    }
+
+   .map {
+    height: 384px;
+    @media (max-width: 768px) {
+      height: 226px;
+    }
+  }
 
    .country{
     display: flex;
@@ -155,6 +216,9 @@ export const AboutContainer = styled.div`
     height: 48px;
     margin-bottom: 16px;
     color: rgb(55, 71, 79);
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+    }
    }
 
    .ant-input:placeholder-shown{
@@ -174,4 +238,17 @@ export const AboutContainer = styled.div`
     margin: 22px 0px;
     border-color: rgb(40, 84, 116);
    }
+
+   .form-container {
+    width: 770px;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      width: auto;
+    }
+  }
+  .bt-container {
+    @media screen and (max-width: 575px) {
+      text-align: center;
+    }
+  }
 `;

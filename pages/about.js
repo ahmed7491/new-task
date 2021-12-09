@@ -20,20 +20,20 @@ const about = () => {
 
             <div className='row-container'>
                 <Row justify='center' className='index-sec'>
-                    <Col className='conten'>
+                    <Col className='content' lg={{ span: 12, order: 1 }} xs={{ span: 24, order: 2 }}>
                     <div >
-                        <h2 >رؤيتنا</h2>
+                        <h2 className='heade-con' >رؤيتنا</h2>
                         <p>ان نكون المؤسسة الأولي الرائدة في مجال تفنية المعلومات وبرمجة المواقع والتطبيقات</p>
                     </div>
 
                     <div>
-                        <h2 >رؤيتنا</h2>
+                        <h2 className='heade-con'>رؤيتنا</h2>
                         <p>ان نكون المؤسسة الأولي الرائدة في مجال تفنية المعلومات وبرمجة المواقع والتطبيقات</p>
                     </div>
 
                     </Col>
-                    <Col>
-                    <div><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FSolvingProblem.svg&w=1920&q=75"></img></div>
+                    <Col lg={{ span: 12, order: 2 }} xs={{ span: 24, order: 1 }}>
+                    <div><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FSolvingProblem.svg&w=1920&q=75" className='img-container'></img></div>
                     </Col>
                 </Row>
             </div>

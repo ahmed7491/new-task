@@ -19,19 +19,20 @@ const projects = PortfileData.reduce((prev, idx) => {
 }, []);
 
 const PortfilePage = () => {
-  // const currentProject = projects.filter(ct => ct.id == query.id);
-  const { pathname } = useRouter();
   const { query } = useRouter();
-  const category=PortfileData.find(({categories})=> categories.some(({id})=>id==query.id) )
-  console.log("🚀 ~ file: [id].jsx ~ line 26 ~ PortfilePage ~ category", category)
-
   const project = projects.find(({ id }) => id == query.id);
-  const nexProject = category?.categories.find(({ id }) =>  id == (Number (query.id)+1));
 
-  const followPage = () => {
-    project.id = +1;
-  };
-  console.log("gggg", followPage);
+  const category = PortfileData.find(({categories})=> categories.some(({id})=>id==query.id) )
+
+  const existCate = category?.categories.filter(idx => idx.id != query.id);
+  console.log("exist proj", existCate);
+
+  
+  // console.log("nextProject", nextProject);
+
+  // const nexProject = category?.categories.find(({ id }) =>  id == (Number (query.id)+1));
+
+
   if (!project) return "not found";
   return (
     <PortfileContainer query={query}>
@@ -46,10 +47,12 @@ const PortfilePage = () => {
           <HeaderContainer>
             <Typography className="header">{project.proName}</Typography>
             <div>
-              <Link  href={`/portfile/${nexProject?.id}`}>
-                <a  disabled={!nexProject} className="arr-right">&#60;</a>
+              <Link href={`/portfile/${(parseInt(query.id)+1)}`}>
+                <a className="arr-right">&#60;</a>
               </Link>
-              <span className="arr-left">&#62;</span>
+              <Link  href={`/portfile/${ parseInt(query.id)-1}`}>
+                <a   className="arr-right">&#62;</a>
+              </Link>
             </div>
           </HeaderContainer>
           <Text className="description">{project.proDescription}</Text>
@@ -109,24 +112,25 @@ const PortfilePage = () => {
         <p className="other-projects"> مشاريع ذات صلة</p>
 
         <div>
-          {PortfileData.map((target) => (
-            <Row key={target.id} gutter={26}>
-              {target.categories.map((idx) => (
-                <Col key={idx.id}>
-                  <Link href={`/portfile/${idx.id}`}>
+        <Row  gutter={26}>
+
+          {category.categories.filter(idx => idx.id != query.id).map((target) => (
+            
+                <Col key={target.id}  >
+                  <Link href={`/portfile/${target.id}`}>
                     <Space
                       direction="vertical"
                       size="middle"
                       className="cat-container"
                     >
-                      <img src={idx.images[0].src} width={270} height={270} />
-                      <span className="date">{idx.proName}</span>
+                      <img src={target.images[0].src} width={270} height={270} />
+                      <span className="date">{target.proName}</span>
                     </Space>
                   </Link>
                 </Col>
-              ))}
-            </Row>
           ))}
+                      </Row>
+
         </div>
       </RowContainer>
     </PortfileContainer>

@@ -19,8 +19,8 @@ const Products = () => {
   return (
     <ProductsContainer>
       <div className="row-container">
-        <Row justify="center" >
-          <Col xs={24} md={12}>
+        <Row justify="center" style={{margin: "137px 0px"}} >
+          <Col md={12} xs={24}>
             <Typography className='product-content'>
               <Title className="product-header">منتجاتنا</Title>
               <Paragraph className="product-desc">
@@ -29,8 +29,8 @@ const Products = () => {
               </Paragraph>
             </Typography>
           </Col>
-          <Col xs={24} md={12}>
-            <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FLeadership.svg&w=1920&q=75" className='img-peoduct'/>
+          <Col md={12} xs={24}>
+            <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FLeadership.svg&w=1920&q=75" className='img-peoduct' />
             
           </Col>
         </Row>
@@ -47,7 +47,7 @@ const Products = () => {
         </Typography>
       
       <Row align="middle">
-        <Col xs={24} lg={12}>
+        <Col md={12} xs={24}>
           <h3 className="targetHeader">هدفها:</h3>
           <p className="subText">
             مساعدة اصحاب الاعمال والتجار وذوي المشاريع علي تحقيق التحول الرقمي
@@ -77,10 +77,11 @@ const Products = () => {
             ابدا تجربتك المجانية الان &#8592;
           </Button>
         </Col>
-        <Col xs={24} lg={12}>
+        <Col md={12} xs={24}>
           <img
             src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fmacbook.jpg&w=750&q=75"
             alt="store"
+            className='img-peoduct'
           />
         </Col>
       </Row>

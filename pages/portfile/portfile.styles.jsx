@@ -101,12 +101,13 @@ export const HeaderContainer = styled.div`
 
     .arr-right{
        font-size: 40px;
-       color: ${(props) => (props.id + 1 !== null ? "#2ad1c9" : "#7a83839b")};
-       cursor: ${(props) => (props.id + 1 !== null ? "pointer" : "#unset")};;
+       cursor: pointer;
     }
-    .arr-left{
-        font-size: 40px;
-    }
+
+    a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
     
 
 `;
