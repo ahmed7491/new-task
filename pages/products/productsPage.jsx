@@ -47,7 +47,7 @@ const Products = () => {
         </Typography>
       
       <Row align="middle">
-        <Col md={12} xs={24}>
+        <Col lg={12} xs={24}>
           <h3 className="targetHeader">هدفها:</h3>
           <p className="subText">
             مساعدة اصحاب الاعمال والتجار وذوي المشاريع علي تحقيق التحول الرقمي
@@ -77,7 +77,7 @@ const Products = () => {
             ابدا تجربتك المجانية الان &#8592;
           </Button>
         </Col>
-        <Col md={12} xs={24}>
+        <Col lg={12} xs={24}>
           <img
             src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fmacbook.jpg&w=750&q=75"
             alt="store"

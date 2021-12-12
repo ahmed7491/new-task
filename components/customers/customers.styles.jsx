@@ -21,7 +21,7 @@ direction: rtl;
     color: rgb(51, 51, 51);
     margin-bottom: 32px;
     @media screen and (max-width: 768px){
-        max-width: 16%;
+        font-size: 32px;
     }
    
 }
@@ -31,11 +31,14 @@ direction: rtl;
     padding-right: 5px;
     height: 110px;
     overflow: hidden;
+    @media screen and (max-width: 768px){
+        
+    }
 }
 
 .img-logo{
     height: 150px;
-    width: 187px;
+    width: 100%;
 }
 
 

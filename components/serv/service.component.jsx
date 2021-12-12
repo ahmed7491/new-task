@@ -1,7 +1,8 @@
 import React from 'react'
-
+import Link from 'next/link';
 import { Row, Col, Space, Card } from 'antd';
 import { ServiceContainer } from './service.styles';
+import { menuUrl } from '../../layouts/header/header.component';
 
 const Service = () => {
     return (
@@ -14,34 +15,44 @@ const Service = () => {
                   <Col>
                   <Row justify='center'  align='middle'>
                       <Col xs={24} lg={8} >
+                        <Link href={menuUrl.mobilDesign}>
                       <Space direction="vertical" size={[48]} align='center' className='CardContaier'>
                             <img  src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservice1.svg&w=96&q=75" alt="shop" className='CardImg' />
                             <span className='CardTitle'>تصميم التطبيقات</span>
                       </Space>
+                      </Link>
                       </Col>
                       <Col xs={24} lg={8} >
+                        <Link href={menuUrl.E_Commerce}>
                       <Space direction="vertical" size={[48]} className='CardContaier'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservice2.svg&w=96&q=75"  alt="shop" className='CardImg'/>
                         <span className='CardTitle'>تصميم المتاجر الالكترونية</span>
                       </Space>
+                      </Link>
                       </Col>
                       <Col xs={24} lg={8} >
+                        <Link href={menuUrl.designWeb}>
                       <Space direction="vertical" size={[48]} className='CardContaier' >
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservice3.svg&w=96&q=75"  alt="shop" className='CardImg'/>
                         <span className='CardTitle'>تصميم المواقع الالكترونية</span>
                       </Space>
+                      </Link>
                       </Col>
                       <Col xs={24} lg={8} >
+                        <Link href={menuUrl.marketing}>
                       <Space direction="vertical" size={[48]} className='CardContaier' >
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservice4.svg&w=96&q=75"  alt="shop" className='CardImg'/>
                         <span className='CardTitle'>التسويق الالكترونى</span>
                       </Space>
+                      </Link>
                       </Col>
                       <Col xs={24} lg={8} >
+                        <Link href={menuUrl.sedignId}>
                       <Space direction="vertical" size={[48]} className='CardContaier'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservice5.svg&w=96&q=75"  alt="shop" className='CardImg'/>
                         <span className='CardTitle'>تصميم الهوية التجارية الكاملة</span>
                       </Space>
+                      </Link>
                       </Col>
                   </Row>
                   </Col>

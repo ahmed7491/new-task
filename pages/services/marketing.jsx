@@ -14,34 +14,34 @@ const Marketink = () => {
                     <Title className='intro-header'> التسويق الالكتؤونى</Title>
                     <Paragraph className='intro-desc'>التسويق الإلكتروني هو عبارة عن خطة تسويقية متكاملة تستخدم التقنيات الإلكترونية الحديثة وجميع وسائل التواصل المتاحة من خلال الإنترنت للوصول إلى أكبر جمهور مستهدف على الانترنت لتحسين معدل المبيعات والارباح </Paragraph>
                 </Typography>
-                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2FAdvertising_1_.svg&w=640&q=75" alt="" />
+                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2FAdvertising_1_.svg&w=640&q=75" alt="" className='init-image'/>
             </div>
             <div className="feature">
                 <Typography className='row-container'>
                     <Title className='feature-title'>مميزات الاموقع الالكترونى من جيزة ابس </Title>
                     <Paragraph>
                         <Row justify='center' align='middle' >
-                            <Col span={12} style={{marginBottom:'73px'}}>
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
                                 <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fmarketing%2Fcarbon_airline-manage-gates.svg&w=32&q=75" alt="" />
                                 <h5>التسويق عبر وسائل التواصل الإجتماعي</h5>
                                 <span className='description'>هو الوصول إلى أكبر قدر من العملاء المستهدفين والتسويق للمنتجات والسلع والخدمات والتعريف بالعلامة التجارية الخاصة بالمنتج.. يعد التسويق عبر مواقع التواصل الاجتماعي فعال وحيوي للغاية لجميع الشركات والمؤسسات التي تبحث عن زيادة مبيعاتها وأرباحها وبناء علامة تجارية خاصة بها.. وذلك بسبب الأهمية الكبيرة لمواقع التواصل الاجتماعي</span>
                                 </Space>
                             </Col>
-                            <Col span={12} style={{marginBottom:'73px'}}>
-                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fmarketing%2Fcarbon_airline-manage-gates.svg&w=32&q=75" alt="" />
-                                <h5>التسويق عبر وسائل التواصل الإجتماعي</h5>
-                                <span className='description'>هو الوصول إلى أكبر قدر من العملاء المستهدفين والتسويق للمنتجات والسلع والخدمات والتعريف بالعلامة التجارية الخاصة بالمنتج.. يعد التسويق عبر مواقع التواصل الاجتماعي فعال وحيوي للغاية لجميع الشركات والمؤسسات التي تبحث عن زيادة مبيعاتها وأرباحها وبناء علامة تجارية خاصة بها.. وذلك بسبب الأهمية الكبيرة لمواقع التواصل الاجتماعي</span>
-
-                                </Space>
-                            </Col>
-                            <Col span={12} style={{marginBottom:'73px'}}>
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
                                 <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fmarketing%2Fcarbon_airline-manage-gates.svg&w=32&q=75" alt="" />
                                 <h5>التسويق عبر وسائل التواصل الإجتماعي</h5>
                                 <span className='description'>هو الوصول إلى أكبر قدر من العملاء المستهدفين والتسويق للمنتجات والسلع والخدمات والتعريف بالعلامة التجارية الخاصة بالمنتج.. يعد التسويق عبر مواقع التواصل الاجتماعي فعال وحيوي للغاية لجميع الشركات والمؤسسات التي تبحث عن زيادة مبيعاتها وأرباحها وبناء علامة تجارية خاصة بها.. وذلك بسبب الأهمية الكبيرة لمواقع التواصل الاجتماعي</span>
 
                                 </Space>
                             </Col>
-                            <Col span={12} style={{marginBottom:'73px'}}>
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
+                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fmarketing%2Fcarbon_airline-manage-gates.svg&w=32&q=75" alt="" />
+                                <h5>التسويق عبر وسائل التواصل الإجتماعي</h5>
+                                <span className='description'>هو الوصول إلى أكبر قدر من العملاء المستهدفين والتسويق للمنتجات والسلع والخدمات والتعريف بالعلامة التجارية الخاصة بالمنتج.. يعد التسويق عبر مواقع التواصل الاجتماعي فعال وحيوي للغاية لجميع الشركات والمؤسسات التي تبحث عن زيادة مبيعاتها وأرباحها وبناء علامة تجارية خاصة بها.. وذلك بسبب الأهمية الكبيرة لمواقع التواصل الاجتماعي</span>
+
+                                </Space>
+                            </Col>
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
                                 <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fmarketing%2Fcarbon_airline-manage-gates.svg&w=32&q=75" alt="" />
                                 <h5>التسويق عبر وسائل التواصل الإجتماعي</h5>
                                 <span className='description'>هو الوصول إلى أكبر قدر من العملاء المستهدفين والتسويق للمنتجات والسلع والخدمات والتعريف بالعلامة التجارية الخاصة بالمنتج.. يعد التسويق عبر مواقع التواصل الاجتماعي فعال وحيوي للغاية لجميع الشركات والمؤسسات التي تبحث عن زيادة مبيعاتها وأرباحها وبناء علامة تجارية خاصة بها.. وذلك بسبب الأهمية الكبيرة لمواقع التواصل الاجتماعي</span>

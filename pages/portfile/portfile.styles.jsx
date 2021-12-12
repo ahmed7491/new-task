@@ -44,6 +44,8 @@ export const RowContainer = styled.div`
     .description{
         font-weight: 500;
     font-size: 20px;
+    max-width: fit-content;
+    max-height: max-content;
     line-height: 27px;
     text-align: right;
     color: rgb(55, 71, 79);

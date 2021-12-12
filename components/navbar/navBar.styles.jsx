@@ -12,11 +12,19 @@ export const HeaderContainer = styled.div`
    
   background-image: linear-gradient(to right , #1890ff, rgb(72, 128, 72));
 
-  
+  .row-container{
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    }
   
   .ContentContainer{
     position: absolute;
+    max-width: 794px;
     text-align: center ;
+    width: 100%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -53,10 +61,16 @@ export const HeaderContainer = styled.div`
     line-height: 48px;
     min-width: 310px;
     user-select: none;
-    @media screen and (max-width: 786px) {
+    @media screen and (max-width: 768px) {
     font-size: 34px;
   }
+  @media screen and (min-width: 425px){
+
+  }
     
+}
+.contet{
+  
 }
 .ContentDesc{
   font-weight: 400;
@@ -67,6 +81,7 @@ export const HeaderContainer = styled.div`
 
 @media screen and (max-width: 768px) {
     font-size: 18px;
+    
   }
 }
 .btn-1{

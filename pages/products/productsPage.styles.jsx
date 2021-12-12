@@ -127,11 +127,19 @@ direction: rtl;
 }
 
 .img-peoduct{
-    width: 100%;
-  height: 197px;
+  width: 585px;
 
     @media screen and (max-width: 768px){
-        width: 355px;
+        width: 670px;
+    }
+    @media screen and (max-width: 426px) {
+      width: 425px;
+    }
+    @media screen and (max-width: 376px) {
+      width: 344px;
+    }
+    @media screen and (max-width: 320px) {
+      width: 319px;
     }
 }
 

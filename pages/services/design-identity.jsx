@@ -14,12 +14,12 @@ const IdentityPage = () => {
                     <Title className='intro-header'> تصميم الهوية التجارية الكاملة</Title>
                     <Paragraph className='intro-desc'>الهوية التجاريه ليست مجرد شعار الشركة وانما هي اي  شئ مرئي يتم استخدامه لتسويق علامتك التجارية</Paragraph>
                 </Typography>
-                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2FCreative-Process.svg&w=640&q=75" alt="ban" />
+                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2FCreative-Process.svg&w=640&q=75" alt="ban" className='init-image' />
             </div>
             <h1 className="feature-head">اهمية تصميم الهوية التجارية</h1>
             <div className="row-container">
                 <Row>
-                    <Col style={{height:'353px', width:'580px'}}>
+                    <Col xs={24} md={12}  style={{height:'353px', width:'580px'}}>
                     <div className='rw-cont'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fright.svg&w=32&q=75" alt="mark" />
                         <span>اظهار منتجك او شركتك وتمييزها بين باقي الشركات</span>
@@ -41,39 +41,39 @@ const IdentityPage = () => {
                         <span>زيادة ثقة العملاء بالخدمات والمنتجات التي تقدمها</span>
                     </div>
                     </Col >
-                    <Col style={{height:'353px', width:'580px'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FrelaxedWoman.svg&w=1920&q=75" alt="" /></Col>
+                    <Col xs={24} md={12}  style={{height:'353px', width:'580px'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FrelaxedWoman.svg&w=1920&q=75" alt=""  className='init-image'/></Col>
                 </Row>
             </div>
             <div className='design-id'>
                 <div className="row-container">
                 <h1 className="feature-head">ما الذى نقدمه لك فى تصميم  الهوية التجارية؟</h1>
                 <Row>
-                    <Col span={8}><div className='designCont'>
+                    <Col xs={24} md={12} xl={6}><div className='designCont'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FlogoDesign.svg&w=48&q=75" alt="lg" />
                         <span>تصميم شعار اللوجو</span>
                         </div>
                         </Col>
-                    <Col span={8}><div className='designCont'>
+                    <Col xs={24} md={12} xl={6}><div className='designCont'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FemployeesDesign.svg&w=48&q=75" alt="lg" />
                         <span>تصميم شعار اللوجو</span>
                         </div>
                         </Col>
-                    <Col span={8}><div className='designCont'>
+                    <Col xs={24} md={12} xl={6}><div className='designCont'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FlogoDesign.svg&w=48&q=75" alt="lg" />
                         <span>تصميم شعار اللوجو</span>
                         </div>
                         </Col>
-                    <Col span={8}><div className='designCont'>
+                    <Col xs={24} md={12} xl={6}><div className='designCont'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FprintsDesign.svg&w=48&q=75" alt="lg" />
                         <span>تصميم شعار اللوجو</span>
                         </div>
                         </Col>
-                    <Col span={8}><div className='designCont'>
+                    <Col xs={24} md={12} xl={6}><div className='designCont'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FprintsDesign.svg&w=48&q=75" alt="lg" />
                         <span>تصميم شعار اللوجو</span>
                         </div>
                         </Col>
-                    <Col span={8}><div className='designCont'>
+                    <Col xs={24} md={12} xl={6}><div className='designCont'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FlogoDesign.svg&w=48&q=75" alt="lg" />
                         <span>تصميم شعار اللوجو</span>
                         </div>
@@ -85,22 +85,22 @@ const IdentityPage = () => {
             <div className="row-container">
                 <h1 className="feature-head">مراحل تصميم الهوية التجاريه في جيزة أبس</h1>
                 <Row>
-                    <Col span={6}><div className='designCont'>
+                    <Col xs={24} md={12} xl={6}><div className='designCont'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FdesignSteps1.svg&w=96&q=75" alt="lg" />
                         <span>تصميم شعار اللوجو</span>
                         </div>
                         </Col>
-                    <Col span={6}><div className='designCont'>
+                    <Col xs={24} md={12} xl={6}><div className='designCont'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FdesignSteps2.svg&w=96&q=75" alt="lg" />
                         <span>تصميم شعار اللوجو</span>
                         </div>
                         </Col>
-                    <Col span={6}><div className='designCont'>
+                    <Col xs={24} md={12} xl={6}><div className='designCont'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FdesignSteps3.svg&w=96&q=75" alt="lg" />
                         <span>تصميم شعار اللوجو</span>
                         </div>
                         </Col>
-                    <Col span={6}><div className='designCont'>
+                    <Col xs={24} md={12} xl={6}><div className='designCont'>
                         <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FdesignSteps4.svg&w=96&q=75" alt="lg" />
                         <span>تصميم شعار اللوجو</span>
                         </div>

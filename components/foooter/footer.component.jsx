@@ -7,13 +7,18 @@ import { FooterContainer } from './footer.styles';
 const FooterComponent = () => {
     return (
         <FooterContainer>
-            <Row className='rowContainer' >
-                <Col flex={1} span={16} pull={3}  className='footerCol'>
+            <div className='row-container' >
+            <Row gutter={[20, 40]}>
+                <Col  md={{ span: 10, order: 1 }}
+            sm={{ span: 11, order: 1 }}
+            xs={{ span: 24, order: 1 }} >
                     <div className='headerContainer'> GIZA APPS 
                     <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FfooterLogo.svg&w=32&q=75" alt="logo" /> </div>
                     <div className='description'>شركة تساهم في تعزيز التواجد الرقمي من خلال تقديم البرمجيات،نقوم بتقديم كل الخدمات بداية من لبرمجة وحتي تصميم وانتهاءا بالتسويق الالكتروني .</div>
                 </Col>
-                <Col flex={1.5} span={4} className='footerCol'>
+                <Col md={{ span: 4, order: 2 }}
+            sm={{ span: 5, order: 2 }}
+            xs={{ span: 10, order: 1 }}>
                     <h5 className='headerItems'>عن الشركة</h5>
                     <Space direction='vertical'>
                         <span className="footeItem">منتجاتنا</span>
@@ -23,7 +28,9 @@ const FooterComponent = () => {
                         <span className="footeItem">عن الشركة</span>
                     </Space>
                 </Col>
-                <Col flex={1} span={8} className='footerCol'>
+                <Col md={{ span: 6, order: 3 }}
+            sm={{ span: 8, order: 3 }}
+            xs={{ span: 14, order: 2 }}>
                     <h5 className='headerItems'>تواصل معنا</h5>
                     <Space direction='vertical'>
                         <span className="footeItem">(+20)012345789</span>
@@ -31,19 +38,21 @@ const FooterComponent = () => {
                     </Space>
                     
                 </Col>
-                <Col flex={1.5} span={4} className='footerCol'>
+                <Col order={4} md={{ span: 4 }} sm={{ span: 0 }} xs={{ span: 0 }}>
                     <h5 className='headerItems'>تابعنا</h5>
-                    <Space direction='horizontal'>
+                    <Space direction='horizontal' size={20}>
                         <img  src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FgreenFacebook.svg&w=16&q=75" className="footeItem"/>
                         <img  src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FgreenLinkedIn.svg&w=16&q=75" className="footeItem"/>
                         
                     </Space>
                 </Col>
             </Row>
-            <Row className='copRightContainer' >
-                <Col span={2} offset={20} pull={2} className='copRightItems'>الشروط و الاحكام</Col>
-                <Col span={2} > &#169; GIZA APPS</Col>
+            <Divider/>
+            <Row justify='space-between'>
+                <Col > الشروط و الاحكام</Col>
+                <Col > &#169; GIZA APPS</Col>
             </Row>    
+            </div>
         </FooterContainer>
     )
 }

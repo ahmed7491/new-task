@@ -34,6 +34,18 @@ export const HeaderContainer = styled.header`
   }
 }
 
+.showDropdown{
+  @media screen and (min-width: 1440px){
+    display: none;
+    width: 0px;
+  }
+}
+.dropDown-styl{
+  list-style: none;
+  direction: rtl;
+
+}
+
 .row-container{
     max-width: 1200px;
     padding-right: 15px;
@@ -52,5 +64,11 @@ export const HeaderContainer = styled.header`
     height: 27px;
     margin-left: 8px;
     color: ${(props) => (props.path == "/" ? "#fff" : "#37474F")};
+}
+
+.ant-drawer .ant-drawer-content{
+  @media screen and (min-width: 321px){
+    width: 318px
+  }
 }
  `;

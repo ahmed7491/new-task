@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-    height: 350px;
-    width: 100%;
-    padding: 40px 0;
-    background-color: #285474;
+   background-color: #285474;
+  padding: 24px 0;
+  margin-top: auto !important;
     color: rgb(185, 190, 192);
     
     line-height: 20px;
     direction: rtl;
 
-    .rowContainer{
-        max-width: 1200px;
-        height: 270px;
-        
+    .row-container{
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     }
 
     .footerCol{

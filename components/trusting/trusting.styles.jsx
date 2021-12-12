@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TrustingContainer = styled.div`
-    
+    margin-top: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,6 +11,16 @@ export const TrustingContainer = styled.div`
     padding-top: 72px;
     padding-bottom: 120px;
     background-color: #fcfcfc;
+    @media screen and (max-width: 768px) {
+        margin-top: 272vh;
+    }
+    .row-container{
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    }
 
     .secHeader{
 
@@ -26,7 +36,7 @@ export const TrustingContainer = styled.div`
     margin-bottom: 32px;
 
     @media screen and (max-width: 768px){
-        font-size: 34px;
+        
     }
 }
 
@@ -43,14 +53,14 @@ export const TrustingContainer = styled.div`
 }
 
 .ReasonsContainer{
-    max-width: 1200px;
+    
 }
 
 .reason{
     width: 585px;
     height: 160px;
         @media screen and (max-width: 1024px) {
-            width: 480px;
+            
         }
 }
 

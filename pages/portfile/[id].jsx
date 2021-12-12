@@ -18,6 +18,8 @@ const projects = PortfileData.reduce((prev, idx) => {
   return [...prev, ...idx.categories];
 }, []);
 
+console.log( "projects" , projects);
+
 const PortfilePage = () => {
   const { query } = useRouter();
   const project = projects.find(({ id }) => id == query.id);
@@ -28,9 +30,7 @@ const PortfilePage = () => {
   console.log("exist proj", existCate);
 
   
-  // console.log("nextProject", nextProject);
 
-  // const nexProject = category?.categories.find(({ id }) =>  id == (Number (query.id)+1));
 
 
   if (!project) return "not found";
@@ -42,9 +42,10 @@ const PortfilePage = () => {
             <span> &#707;سابقة اعمالنا</span>
           </Link>
         </GoBack>
-
+        <Row>
         <Space direction="vertical" size={46}>
-          <HeaderContainer>
+          <Col xl={24} lg={20} md={15} sm={12} xs={6}>
+            <HeaderContainer>
             <Typography className="header">{project.proName}</Typography>
             <div>
               <Link href={`/portfile/${(parseInt(query.id)+1)}`}>
@@ -55,9 +56,10 @@ const PortfilePage = () => {
               </Link>
             </div>
           </HeaderContainer>
-          <Text className="description">{project.proDescription}</Text>
-
-          <div className="dateContainer">
+          </Col>
+          <Col xl={24} lg={20} md={15} sm={12} xs={6}><Text className="description">{project.proDescription}</Text></Col>
+          <Col xl={24} lg={20} md={15} sm={12} xs={6}>
+            <div className="dateContainer">
             <span className="date">
               <img
                 src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fcalendar.svg&w=32&q=75"
@@ -99,7 +101,14 @@ const PortfilePage = () => {
               </a>
             </span>
           </div>
-        </Space>
+          </Col></Space>
+        </Row>
+        
+          
+          
+
+          
+        
 
         <div style={{ marginTop: "30px" }}>
           <Carousel autoplay>

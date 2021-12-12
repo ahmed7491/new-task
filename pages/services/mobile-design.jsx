@@ -31,42 +31,42 @@ const DesignMob = () => {
                     <Title className='feature-title'>مميزات برمجة التطبيقات من جيزة أبس  </Title>
                     <Paragraph>
                         <Row justify='center' align='middle'>
-                            <Col span={8} style={{marginBottom:'73px'}}>
-                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature4.svg&w=96&q=75" alt="" />
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
+                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature4.svg&w=96&q=75" width={72} height={72} />
                                 <h5>ربط بوسائل التواصل الاجتماعى</h5>
                                 </Space>
                             </Col>
-                            <Col span={8} style={{marginBottom:'73px'}}>
-                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature3.svg&w=96&q=75" alt="" />
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
+                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature3.svg&w=96&q=75" width={72} height={72} />
                                 <h5>لوحة تحكم سهلة</h5>
                                 </Space>
                             </Col>
-                            <Col span={8} style={{marginBottom:'73px'}}>
-                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature2.svg&w=96&q=75" alt="" />
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
+                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature2.svg&w=96&q=75" width={72} height={72} />
                                 <h5>موقع باكثر من لغة</h5></Space>
                             </Col>
-                            <Col span={8} style={{marginBottom:'73px'}}>
-                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature1.svg&w=96&q=75" alt="" />
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
+                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature1.svg&w=96&q=75" width={72} height={72} />
                                 <h5>موقع متناسب مع نشاطك التجارى</h5></Space>
                             </Col>
-                            <Col span={8} style={{marginBottom:'73px'}}>
-                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature8.svg&w=96&q=75" alt="" />
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
+                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature8.svg&w=96&q=75" width={72} height={72} />
                                 <h5>تخطيط وتقسيم جيد لعلامات التبويت</h5></Space>
                             </Col>
-                            <Col span={8} style={{marginBottom:'73px'}}>
-                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature7.svg&w=96&q=75" alt="" />
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
+                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature7.svg&w=96&q=75" width={72} height={72} />
                                 <h5>يحتوى على معايير وشهادات الامان</h5></Space>
                             </Col>
-                            <Col span={8} style={{marginBottom:'73px'}}>
-                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature6.svg&w=96&q=75" alt="" />
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
+                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature6.svg&w=96&q=75" width={72} height={72} />
                                 <h5>متجاوب مع جميع الاجهزة</h5></Space>
                             </Col>
-                            <Col span={8} style={{marginBottom:'73px'}}>
-                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature5.svg&w=96&q=75" alt="" />
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
+                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature5.svg&w=96&q=75" width={72} height={72} />
                                 <h5>متوافق مع معايير السيو</h5></Space>
                             </Col>
-                            <Col span={8} style={{marginBottom:'73px'}}>
-                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature4.svg&w=96&q=75" alt="" />
+                            <Col xs={24} md={12} xl={6} style={{marginBottom:'73px'}}>
+                                <Space direction='vertical' size='large' align='center' style={{maxWidth:'435px',margin:'0px auto'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fweb-development%2FwebsiteDesignFeature4.svg&w=96&q=75" width={72} height={72} />
                                 <h5>ربط بوسائل التواصل الاجتماعى</h5>
                                 </Space>
                             </Col>
@@ -77,17 +77,17 @@ const DesignMob = () => {
 
             <div className="row-container">
             <h1 className='header-mob'>خدمات تصميم تطبيقات الجوال  </h1>
-            <Row gutter={[28,0]}>
-                <Col >
+            <Row gutter={28} >
+                <Col xs={12}>
                 <div className='andorid-ios green'>
-                    <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fmobile-design%2Fandroid%201.svg&w=96&q=75" alt="" />
-                    <span className="ask-serv-hd">تصميم تطبيقات الاندرويد</span>
+                    <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fmobile-design%2Fandroid%201.svg&w=96&q=75" width={66} height={66} alt="" />
+                    <span className="card__title">تصميم تطبيقات الاندرويد</span>
                 </div>
                 </Col>
-                <Col>
+                <Col xs={12}>
                 <div className='andorid-ios blue'>
-                    <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fmobile-design%2Fapple%201.svg&w=96&q=75" alt="" />
-                    <span className="ask-serv-hd">تصميم تطبيقات ios</span>
+                    <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fmobile-design%2Fapple%201.svg&w=96&q=75" width={66} height={66} alt="" />
+                    <span className="card__title">تصميم تطبيقات ios</span>
                 </div>
                 </Col>
             </Row>
