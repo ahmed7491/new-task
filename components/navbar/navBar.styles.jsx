@@ -64,8 +64,8 @@ export const HeaderContainer = styled.div`
     @media screen and (max-width: 768px) {
     font-size: 34px;
   }
-  @media screen and (min-width: 425px){
-
+  @media screen and (max-width: 576px){
+    white-space: normal;
   }
     
 }
@@ -82,6 +82,9 @@ export const HeaderContainer = styled.div`
 @media screen and (max-width: 768px) {
     font-size: 18px;
     
+  }
+  @media screen and (max-width: 576px){
+    line-height: 24px;
   }
 }
 .btn-1{

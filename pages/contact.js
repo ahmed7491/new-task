@@ -90,7 +90,7 @@ const Contact = () => {
         <div style={{ paddingBottom: "100px" }}>
           <div className="row-container">
           <div className='form-container'>
-            <div style={{ width: "770px", margin: "0px auto" }}>
+            
               <Row justify='center' gutter={[0,50]}>
                 <Col
                   style={{
@@ -98,14 +98,15 @@ const Contact = () => {
                     fontSize: "24px",
                     color: "#333333",
                   }}
-                  
+                  xs={{ span: 24 }}
                 >
-                    <Space direction='vertical' >
+                    <Space direction='vertical'  style={{ textAlign: "center", width: "100%" }}
+                  size={16}>
 
                   تواصل معنا
                     </Space>
                 </Col>
-                <Col >
+                <Col xs={{ span: 24 }}>
                   <Form size="large" layout='horizontal'>
                       <Row >
                           <Col xs={{ span: 24 }}>
@@ -117,7 +118,7 @@ const Contact = () => {
                     </Col>
                     <Col sm={{ span: 12 }} xs={{ span: 24 }}>
                     <Form.Item >
-                      <Input placeholder="رقمك" type="number"/>
+                      <Input placeholder="رقمك" type="text"/>
                     </Form.Item>
                     </Col>
                     </Row>
@@ -142,7 +143,7 @@ const Contact = () => {
                 </Col>
               </Row>
             </div>
-          </div>
+          
           </div>
         </div>
        

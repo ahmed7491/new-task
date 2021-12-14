@@ -1,11 +1,69 @@
 import React from 'react'
-import { ServicesContainer } from './services.styles'
+import Link from "next/dist/client/link";
+
+import { ServicesContainer, CarouselItem  } from './services.styles'
 import { Row, Col, Typography, Button, Space, Card, Carousel } from 'antd';
+import PortfileData from '../portfile/portfileData'
+
 
 
 const { Title, Paragraph } = Typography;
+const projects = PortfileData.reduce((prev, idx) => {
+    return [...prev, ...idx.categories];
+  }, []);
 
 const DesignMob = () => {
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoPlaySpeed: 200,
+        speed: 700,
+        cssEase: "linear",
+        rtl: false,
+        centerMode: true,
+        variableWidth: true,
+    
+        responsive: [
+          {
+            breakpoint: 1800,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 1440,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              centerMode: true,
+            },
+          },
+          {
+            breakpoint: 760,
+            settings: {
+              slidesToShow: 3,
+              centerMode: true,
+            },
+          },
+          {
+            breakpoint: 573,
+            settings: {
+              slidesToShow: 1,
+              centerMode: true,
+            },
+          },
+        ],
+      };
+
     return (
         <ServicesContainer>
             <div className='intro-container'>
@@ -13,17 +71,15 @@ const DesignMob = () => {
                     <Title className='intro-header'> تصميم تطبيقات الجوال</Title>
                     <Paragraph className='intro-desc'>انت صاحب شركة أو لديك فكرة نشاط تجاري؟ اذا ستحتاج إلي  تصميم وبرمجة تطبيقات الجوال كي تحصل علي تطبيق خاص بشركتك أو نشاطك التجاري يمكنك التطبيق  من التواصل مع العملاء بطريقة أسرع وأكثر احترافيه كذلك يساهم التطبيق الالكتروني في تسهيل  عملية التواصل مع عملائك لذلك فإن عملية تصميم تطبيقات الجوال هي عملية تهدف في الأساس إلي راحة العميل وزيادة المبيعات.</Paragraph>
                 </Typography>
-                <Carousel autoplay slidesToShow={5} centerPadding>
-                   <img src="https://www.gizaapps.com/static/images/services-images/ecommerce/slider/2.jpg" alt="" className='img-carsoul' />
-                    <img src="https://www.gizaapps.com/static/images/services-images/ecommerce/slider/2.jpg" alt="" className='img-carsoul' />
-                    
-  
-                    <img src="https://www.gizaapps.com/static/images/services-images/ecommerce/slider/3.jpg" alt=""  className='img-carsoul'/>
- 
-                    <img src="https://www.gizaapps.com/static/images/services-images/ecommerce/slider/2.jpg" alt="" className='img-carsoul' />
-    
-                    <img src="https://www.gizaapps.com/static/images/services-images/ecommerce/slider/2.jpg" alt="" className='img-carsoul' />
-                </Carousel>
+                <Carousel {...settings}>
+          {projects.map((target) => (
+            <CarouselItem key={target.id}>
+              <Link href={`/portfile/${target.id}`}>
+                <img height="260" src={target.images[1].src} />
+              </Link>
+            </CarouselItem>
+          ))}
+        </Carousel>
                 
             </div>
             <div className="row-container">

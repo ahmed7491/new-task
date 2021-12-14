@@ -66,9 +66,8 @@ export const HeaderContainer = styled.header`
     color: ${(props) => (props.path == "/" ? "#fff" : "#37474F")};
 }
 
-.ant-drawer .ant-drawer-content{
-  @media screen and (min-width: 321px){
-    width: 318px
-  }
+.ant-drawer-content-wrapper{
+  max-width: 200px;
+  background-color: red;
 }
  `;

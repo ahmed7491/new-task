@@ -5,6 +5,9 @@ import { Row, Col, Button, Space, Menu, Dropdown, Drawer } from "antd";
 import { HeaderContainer } from "./header.styles";
 import { useRouter } from "next/router";
 
+
+const { SubMenu } = Menu;
+
 export const menuUrl = {
   home: "/",
   designWeb: "/services/design-web",
@@ -61,16 +64,36 @@ const HeaderComponent = () => {
               closable={false}
               onClose={onClose}
               visible={visible}
+              width={300}
             ><ul className="dropDown-styl" style={{listStyle: 'none', direction:'rtl', color: 'rgb(55, 71, 79)',fontWeight:'500', fontSize:'20px', lineHeight:'20px'}}>
               <li onClick={onClose}>
               <Link href="/">
                 <p> الرئيسية</p>
               </Link>
               </li>
-              <li >
+              <li onClick={onClose}>
               <Link href={menuUrl.ourProducts}>
                 <p>منتجاتنا</p>
               </Link>
+              </li>
+              <li>
+              {/* <SubMenu key="sub"  title="خدمتنا&#709;">
+              <Menu.Item key='1'>
+      <Link href={menuUrl.designWeb} >تصميم موقع الكترونى</Link>
+    </Menu.Item>
+    <Menu.Item key='2'>
+      <Link href={menuUrl.E_Commerce}>تصميم المتاجر الالكترونية</Link>
+    </Menu.Item>
+    <Menu.Item key='3'>
+      <Link href={menuUrl.mobilDesign}>تصميم التطبيقات</Link>
+    </Menu.Item>
+    <Menu.Item key='4'>
+      <Link href={menuUrl.sedignId}>تصميم الهوية التجارية الكاملة</Link>
+    </Menu.Item>
+    <Menu.Item key='5'>
+      <Link href={menuUrl.marketing}>التسويق الالكترونى</Link>
+    </Menu.Item>
+              </SubMenu> */}
               <Dropdown overlay={menu} placement="bottomLeft" arrow>
                 <p> خدمتنا&#709;</p>
               </Dropdown>

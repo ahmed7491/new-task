@@ -56,14 +56,14 @@ export const ServicesContainer = styled.div`
   }
 
   .init-image {
-    width: 549px;
-    @media screen and (min-width: 425px) {
+    width: 100%;
+    @media screen and (max-width: 425px) {
       width: 425px;
     }
-    @media screen and (min-width: 375px) {
+    @media screen and (max-width: 375px) {
       width: 374px;
     }
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 320px) {
       width: 319px;
     }
   }
@@ -349,5 +349,19 @@ export const ServicesContainer = styled.div`
     text-align: center;
     padding-top: 154px;
     margin-top: 154px;
+  }
+`;
+
+export const CarouselItem = styled.div`
+  padding: 0 10px !important;
+  margin-bottom: 50px;
+
+  img {
+    object-fit: contain;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      max-width: 260px;
+    }
   }
 `;

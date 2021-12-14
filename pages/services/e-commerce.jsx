@@ -1,11 +1,13 @@
 import React from "react";
-import { ServicesContainer } from "./services.styles";
+import { ServicesContainer, CarouselItem } from "./services.styles";
 import Link from "next/dist/client/link";
-import styled from "styled-components";
 import { Row, Col, Typography, Button, Space, Card, Carousel } from "antd";
 import PortfileData from '../portfile/portfileData'
 
 const { Title, Paragraph } = Typography;
+
+// const imageData = PortfileData[0].categories.map((idx) => idx.images.map((target) => tar)
+// console.log("image loop" , imageData)
 const projects = PortfileData.reduce((prev, idx) => {
     return [...prev, ...idx.categories];
   }, []);
@@ -80,8 +82,8 @@ const ShopCom = () => {
         <Carousel {...settings}>
           {projects.map((target) => (
             <CarouselItem key={target.id}>
-              <Link href={`/portfolio/${target.id}`}>
-                <img height="260" src={target.images} />
+              <Link href={`/portfile/${target.id}`}>
+                <img height="260" src={target.images[0].src} />
               </Link>
             </CarouselItem>
           ))}
@@ -361,18 +363,3 @@ const ShopCom = () => {
 };
 
 export default ShopCom;
-
-
-const CarouselItem = styled.div`
-  padding: 0 10px !important;
-  margin-bottom: 50px;
-
-  img {
-    object-fit: contain;
-    cursor: pointer;
-
-    @media screen and (max-width: 768px) {
-      max-width: 260px;
-    }
-  }
-`;

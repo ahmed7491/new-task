@@ -14,7 +14,7 @@ const IdentityPage = () => {
                     <Title className='intro-header'> تصميم الهوية التجارية الكاملة</Title>
                     <Paragraph className='intro-desc'>الهوية التجاريه ليست مجرد شعار الشركة وانما هي اي  شئ مرئي يتم استخدامه لتسويق علامتك التجارية</Paragraph>
                 </Typography>
-                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2FCreative-Process.svg&w=640&q=75" alt="ban" className='init-image' />
+                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2FCreative-Process.svg&w=640&q=75" alt="ban" width={549} height={224} className='init-image' />
             </div>
             <h1 className="feature-head">اهمية تصميم الهوية التجارية</h1>
             <div className="row-container">
@@ -41,7 +41,7 @@ const IdentityPage = () => {
                         <span>زيادة ثقة العملاء بالخدمات والمنتجات التي تقدمها</span>
                     </div>
                     </Col >
-                    <Col xs={24} md={12}  style={{height:'353px', width:'580px'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FrelaxedWoman.svg&w=1920&q=75" alt=""  className='init-image'/></Col>
+                    <Col xs={24} md={12}  style={{height:'353px', width:'580px'}}><img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2FrelaxedWoman.svg&w=1920&q=75" alt="" width={585} height={353} className='init-image'/></Col>
                 </Row>
             </div>
             <div className='design-id'>

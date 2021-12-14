@@ -14,7 +14,7 @@ const Marketink = () => {
                     <Title className='intro-header'> التسويق الالكتؤونى</Title>
                     <Paragraph className='intro-desc'>التسويق الإلكتروني هو عبارة عن خطة تسويقية متكاملة تستخدم التقنيات الإلكترونية الحديثة وجميع وسائل التواصل المتاحة من خلال الإنترنت للوصول إلى أكبر جمهور مستهدف على الانترنت لتحسين معدل المبيعات والارباح </Paragraph>
                 </Typography>
-                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2FAdvertising_1_.svg&w=640&q=75" alt="" className='init-image'/>
+                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2FAdvertising_1_.svg&w=640&q=75" alt="" width={549} height={224} className='init-image'/>
             </div>
             <div className="feature">
                 <Typography className='row-container'>
@@ -55,7 +55,7 @@ const Marketink = () => {
             </div>
 
             <div className="marketing-services">
-                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fmarketing%2FbigImage.svg&w=828&q=75" alt="" />
+                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2Fmarketing%2FbigImage.svg&w=828&q=75" alt="" width={810} height={392} className='init-image'/>
                 <h2 >اهمية التسويق الالكتروني</h2>
                 <p style={{maxWidth: '60%' , margin: '0px auto 31px auto'}}>تقديم الخدمات في أوقات تتناسب مع أوقات نشاط المستخدمين للإنترنت من جمهورهم يقوم التسويق الإلكتروني بتوسيع مساحة الاستهداف الجغرافي للعملاء والتعريف بالمنتج، وبالتالي الوصول إلى أكبر عدد ممكن من العملاء المهتمين بالمنتج، وتوسيع عمليات البيع من خلال الأدوات التي تتيحها شبكة الإنترنت وأدوات التواصل الحديثة معرفة سلوكيات العملاء والمنتجات التي يفضلونها، مما يتيح تعديل الخطط الخاصة بالشركة وبمنتجاتها بناء على رغبة الزبائن؛ مما سيحقق مزيدا من الاستحواذ على السوق ىامكانية قياس النتائج التي تحصل عليها بدقة متناهية، وبالتالي تعديل الخطط التسويقية بشكل سريع لتتوافق مع متطلبات جمهورك</p>
                 <Button type="primary" shape="round" className='btn-3'>اطلب الخدمة الان</Button>

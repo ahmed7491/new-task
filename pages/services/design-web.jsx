@@ -14,7 +14,7 @@ const designWebsite = () => {
                     <Paragraph className='intro-desc'>ﻣﻮﻗﻌﻚ اﻟﺎﻟﻜﺘﺮوﻧﻲ ﺳﻴﺘﻴﺢ ﻟﻚ اﻟﺘﻮاﺻﻞ ﻣﻊ ﻋﻤﻠﺎﺋﻚ ﻓﻲ أي ﻣﻜﺎن وأي وﻗﺖ وﺗﺤﻘﻴﻖ أﻓﻀﻞ ﻋﺎﺋﺪ وﺃﻓﻀﻞ ﻣﺒﻴﻌﺎت ﻣﻤﻜﻨﺔ ﺳﻴﻤﻨﺤﻚ ﻣﻮﻗﻌﻚ اﻟﺎﻟﻜﺘﺮوﻧﻲ اﻣﻜﺎﻧﻴﺔ اﻟﻮﺻﻮل ﻟﻌﻤﻠﺎﺋﻚ ﻓﻲ أي ﻣﻜﺎن ﻓﻲ اﻟﻌﺎﻟﻢ ﻣﻦ ﺧﻠﺎل ﻋﺮض ﻛﺎﻓﺔ ﻣﻨﺘﺠﺎﺗﻚ وﺧﺪﻣﺎﺗﻚ ﺑﺸﻜﻞ ﻣﺤﺘﺮف وجذاب ، ﻟﺘﺤﻘﻖ ﺑﺬﻟﻚ أﻋﻠﻰ ﻧﺴﺐ ﺗﺤﻮﻳﻞ ﻟﻠﻤﺒﻴﻌﺎت وﺍﻟﻮﺻﻮل&nbsp;اﻟﻲ ﻋﻤﻠﺎء ﺟﺪد،
                                 ﻓﻲ ﺟﻴﺰة اﺑﺲ ﻧﻀﻤﻦ ﻟﻚ ﺗﺼﻤﻴﻢ ﻣﻮﻗﻌﻚ اﻟﺈﻟﻜﺘﺮوﻧﻲ ﺑﺄﻋﻠﻰ جودة وﺃﺩﺍء وﺷﻜﻞ ﻟﻨﺠﻌﻞ ﺻﻮرة ﺷﺮﻛﺘﻚ أﻭ ﻧﺸﺎﻃﻚ اﻟﺘﺠﺎري ﻓﻲ أﻋﻴﻦ ﻋﻤﻠﺎﺋﻜﻢ ﺣﻮل اﻟﻌﺎﻟﻢ ﺑﺄﻓﻀﻞ ﺷﻜﻞ اﺣﺘﺮاﻓﻲ</Paragraph>
                 </Typography>
-                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2FWeb-Development.svg&w=640&q=75" alt="" className='init-image'/>
+                <img src="https://www.gizaapps.com/_next/image?url=%2Fstatic%2Fimages%2Fservices-images%2FWeb-Development.svg&w=640&q=75" alt="" width={549} height={224} className='init-image'/>
             </div>
             <div className="feature">
                 <Typography className='row-container'>
