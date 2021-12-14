@@ -20,28 +20,9 @@ export const menuUrl = {
   portfile: "/portfile",
   contact: "/contact",
 };
-const menu = (
-  <Menu>
-    <Menu.Item>
-      <Link href={menuUrl.designWeb} >تصميم موقع الكترونى</Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link href={menuUrl.E_Commerce}>تصميم المتاجر الالكترونية</Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link href={menuUrl.mobilDesign}>تصميم التطبيقات</Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link href={menuUrl.sedignId}>تصميم الهوية التجارية الكاملة</Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link href={menuUrl.marketing}>التسويق الالكترونى</Link>
-    </Menu.Item>
-  </Menu>
-);
 
 const HeaderComponent = () => {
-  const { pathname } = useRouter();
+  const { pathname,push } = useRouter();
   const [visible, setVisible] = useState(false);
   const showDrawer = () => {
     setVisible(true);
@@ -50,7 +31,41 @@ const HeaderComponent = () => {
     setVisible(false);
   };
 
-
+  const menu = (
+    <Menu>
+      <Menu.Item onClick={()=>{
+        push(menuUrl.designWeb)
+        onClose()
+      }}>
+        تصميم موقع الكترونى
+      </Menu.Item>
+      <Menu.Item onClick={()=>{
+        push(menuUrl.E_Commerce)
+        onClose()
+      }}>
+        تصميم المتاجر الالكترونية
+      </Menu.Item>
+      <Menu.Item onClick={()=>{
+        push(menuUrl.mobilDesign)
+        onClose()
+      }}>
+        تصميم التطبيقات
+      </Menu.Item>
+      <Menu.Item onClick={()=>{
+        push(menuUrl.sedignId)
+        onClose()
+      }}>
+        تصميم الهوية التجارية الكاملة
+      </Menu.Item>
+      <Menu.Item onClick={()=>{
+        push(menuUrl.marketing)
+        onClose()
+      }}>
+        التسويق الالكترونى
+      </Menu.Item>
+    </Menu>
+  );
+  
   return (
     <HeaderContainer path={pathname}>
       <div className="row-container">
