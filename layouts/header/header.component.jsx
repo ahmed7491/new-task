@@ -1,5 +1,5 @@
 import React,{ useState } from "react";
-
+import Image from "next/image";
 import Link from "next/link";
 import { Row, Col, Button, Space, Menu, Dropdown, Drawer } from "antd";
 import { HeaderContainer } from "./header.styles";
@@ -82,12 +82,12 @@ const HeaderComponent = () => {
               width={300}
             ><ul className="dropDown-styl" style={{listStyle: 'none', direction:'rtl', color: 'rgb(55, 71, 79)',fontWeight:'500', fontSize:'20px', lineHeight:'20px'}}>
               <li onClick={onClose}>
-              <Link href="/">
+              <Link href="/" passHref >
                 <p> الرئيسية</p>
               </Link>
               </li>
               <li onClick={onClose}>
-              <Link href={menuUrl.ourProducts}>
+              <Link href={menuUrl.ourProducts} passHref>
                 <p>منتجاتنا</p>
               </Link>
               </li>
@@ -114,24 +114,24 @@ const HeaderComponent = () => {
               </Dropdown>
               </li>
               <li onClick={onClose}>
-              <Link href={menuUrl.portfile}>
+              <Link href={menuUrl.portfile} passHref>
                 <p>سابقة اعمالنا</p>
               </Link>
               </li>
               <li onClick={onClose}>
-              <Link href={menuUrl.about}>
+              <Link href={menuUrl.about} passHref>
                 <p>عن الشركة</p>
               </Link>
               </li>
               <li onClick={onClose}>
-              <Link href={menuUrl.contact}>
+              <Link href={menuUrl.contact} passHref>
                 <p>تواصل معنا</p>
               </Link>
               </li>
               </ul>
             </Drawer>
           </Col>
-          <Link href="/">
+          <Link href="/" passHref>
             <Col xs={13} xl={6} className="LGCON">
               <span className="LGCON">GIZA APPS</span>
               {pathname == "/" ? (
@@ -149,23 +149,23 @@ const HeaderComponent = () => {
           </Link>
           <Col xs={0} xl={16}>
             <Space>
-              <Link href="/">
+              <Link href="/" passHref>
                 <span className="MenueContent"> الرئيسية</span>
               </Link>
-              <Link href={menuUrl.ourProducts}>
+              <Link href={menuUrl.ourProducts} passHref>
                 <span className="MenueContent">منتجاتنا</span>
               </Link>
               <Dropdown overlay={menu} placement="bottomLeft" arrow>
                 <span className="MenueContent"> خدمتنا&#709;</span>
               </Dropdown>
 
-              <Link href={menuUrl.portfile}>
+              <Link href={menuUrl.portfile} passHref>
                 <span className="MenueContent">سابقة اعمالنا</span>
               </Link>
-              <Link href={menuUrl.about}>
+              <Link href={menuUrl.about} passHref>
                 <span className="MenueContent">عن الشركة</span>
               </Link>
-              <Link href={menuUrl.contact}>
+              <Link href={menuUrl.contact} passHref>
                 <span className="MenueContent">تواصل معنا</span>
               </Link>
             </Space>
