@@ -2,7 +2,7 @@ import React from "react";
 
 import { useRouter } from "next/router";
 import Image from "next/image";
-import {ProductsContainer} from "./productsPage.styles";
+import {ProductsContainer} from "../../styles/productsPage.styles";
 
 import { Row, Col, Typography, Button, Space } from "antd";
 import Link from "next/link";
