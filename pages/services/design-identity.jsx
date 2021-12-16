@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ServicesContainer } from './services.styles'
+import {ServicesContainer} from './services.styles'
 import { Row, Col, Typography, Button, Space, Card } from 'antd';
 
 

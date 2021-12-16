@@ -1,7 +1,12 @@
 
 const withAntdLess = require('next-plugin-antd-less');
 
+
+
 module.exports = withAntdLess({
+  images: {
+    domains: ['www.gizaapps.com'],
+  },
   reactStrictMode: true,
   swcMinify: false, // it should be false by default 
 

@@ -2,7 +2,7 @@ import React from "react";
 
 import { useRouter } from "next/router";
 import Image from "next/image";
-import { ProductsContainer } from "./productsPage.styles";
+import {ProductsContainer} from "./productsPage.styles";
 
 import { Row, Col, Typography, Button, Space } from "antd";
 import Link from "next/link";
@@ -94,7 +94,7 @@ const Products = () => {
             إلكتروني، فقط اضغط على اطلب الآن وتواصل معنا
           </p>
 
-          <a href={path} target="_blank">
+          <a href={path} target="_blank" rel="noreferrer">
             <Button
               type="primary"
               shape="round"

@@ -25,7 +25,7 @@ const Contact = () => {
             <p>
               {" "}
               البريد الالكترونى :{" "}
-              <a class="email" target="_blank" href="mailto:info@gizzaapps.com">
+              <a className="email" target="_blank" href="mailto:info@gizzaapps.com" rel="noreferrer">
                 info@gizzaapps.com
               </a>
             </p>
@@ -33,9 +33,10 @@ const Contact = () => {
               {" "}
               الهاتف:{" "}
               <a
-                class="phone"
+                className="phone"
                 target="_blank"
                 href="https://wa.me/+201026462262"
+                rel="noreferrer"
               >
                 +201026462262
               </a>
@@ -61,7 +62,7 @@ const Contact = () => {
             <p>
               {" "}
               البريد الالكترونى :{" "}
-              <a class="email" target="_blank" href="mailto:info@gizzaapps.com">
+              <a className="email" target="_blank" href="mailto:info@gizzaapps.com" rel="noreferrer">
                 info@gizzaapps.com
               </a>
             </p>
@@ -69,9 +70,10 @@ const Contact = () => {
               {" "}
               الهاتف:{" "}
               <a
-                class="phone"
+                className="phone"
                 target="_blank"
                 href="https://wa.me/+201026462262"
+                rel="noreferrer"
               >
                 +201026462262
               </a>
