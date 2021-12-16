@@ -1,8 +1,8 @@
 import React from "react";
-import {ServicesContainer,  CarouselItem } from "./services.styles";
+import {ServicesContainer,  CarouselItem } from '../../styles/services.styles';
 import Link from "next/dist/client/link";
 import { Row, Col, Typography, Button, Space, Card, Carousel } from "antd";
-import PortfileData from '../portfile/portfileData'
+import PortfileData from '../../components/portfileData'
 
 const { Title, Paragraph } = Typography;
 

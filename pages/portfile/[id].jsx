@@ -8,8 +8,8 @@ import {
   HeaderContainer,
   PortfileContainer,
   RowContainer,
-} from "./portfile.styles";
-import PortfileData from "./portfileData";
+} from "../../styles/portfile.styles";
+import PortfileData from "../../components/portfileData";
 import { useRouter } from "next/router";
 
 const { Text } = Typography;

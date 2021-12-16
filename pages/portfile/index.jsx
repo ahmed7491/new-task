@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 
 import { AboutContainer } from "../../styles/about.styles";
 import { Row, Col, Tabs } from "antd";
-import PortfileData from "./portfileData";
+import PortfileData from "../../components/portfileData";
 
 const { TabPane } = Tabs;
 
