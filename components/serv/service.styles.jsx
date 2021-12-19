@@ -7,15 +7,12 @@ margin-top: 100vh;
 
 .row-container{
     max-width: 1200px;
-    width: 100%;
-    display: block;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    gap: 64px;
-    direction: rtl;
-    justify-content: center;
+
+
 }
 
 .headercon{
@@ -54,9 +51,7 @@ margin-top: 100vh;
     :hover .CardTitle{
         color: #269dbb;
     }
-    @media screen and (max-width: 768px) {
-    width: 620px;
-  }
+
   @media screen and (max-width: 425px) {
     width: 346px;
   }
@@ -86,6 +81,9 @@ margin-top: 100vh;
 .ant-space-vertical{
     align-items: center;
     justify-content: center;
+}
+.ant-card {
+    text-align: center;
 }
 
 @media screen and (max-width: 800px) {

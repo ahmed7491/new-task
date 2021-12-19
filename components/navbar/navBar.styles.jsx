@@ -95,6 +95,11 @@ export const HeaderContainer = styled.div`
   background-color: #285474;
   border: 1px solid #285474;
   border-radius: 36px;
+  @media screen and (max-width: 767px){
+    width: 120px;
+    height: 38px;
+    font-size: 14px;
+  }
 
 }
 .btn-2{
@@ -105,6 +110,11 @@ export const HeaderContainer = styled.div`
     height: 48px;
     font-size: 16px;
     font-weight: 700;
+    @media screen and (max-width: 767px){
+    width: 120px;
+    height: 38px;
+    font-size: 14px;
+  }
 }
 
 

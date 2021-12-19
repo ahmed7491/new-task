@@ -33,6 +33,19 @@ export const HeaderContainer = styled.header`
     color: #2cda9d;
   }
 }
+.lang-stl{
+  cursor: pointer;
+  color: ${(props) => (props.path == "/" ? "#fff" : "#37474F")};
+  :hover{
+    color: #2cda9d;
+  }
+}
+.lan-prop{
+  @media screen and (max-width: 1440px){
+    display: none;
+    width: 0px;
+  }
+}
 
 .showDropdown{
   @media screen and (min-width: 1440px){
@@ -66,8 +79,35 @@ export const HeaderContainer = styled.header`
     color: ${(props) => (props.path == "/" ? "#fff" : "#37474F")};
 }
 
+.ant-menu{
+font-family: Tajawal;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+direction: rtl;
+}
+
+.popover-item{
+  direction: rtl;
+}
+.ant-menu-item .ant-menu-item-only-child .popover-item{
+  direction: rtl;
+}
+
 .ant-drawer-content-wrapper{
   max-width: 200px;
-  background-color: red;
+}
+
+.ant-popover-inner{
+  width: 272px;
+  height: 257px;
+  direction: rtl;
+
+}
+.ant-popover-content{
+  
 }
  `;

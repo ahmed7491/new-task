@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CustomersContainer = styled.div`
-height: 480px;
+height: 290px;
 width: 100%;
 margin-bottom: 120px;
 display: flex;

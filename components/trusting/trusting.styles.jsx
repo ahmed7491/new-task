@@ -12,7 +12,7 @@ export const TrustingContainer = styled.div`
     padding-bottom: 120px;
     background-color: #fcfcfc;
     @media screen and (max-width: 768px) {
-        margin-top: 272vh;
+        margin-top: 340vh;
     }
     .row-container{
     max-width: 1200px;
@@ -73,9 +73,15 @@ export const TrustingContainer = styled.div`
     color: rgb(40, 84, 116);
     margin-bottom: 12px;
 }
+.reason{
+    width: 100%;
+    display: flex;
+    gap: 26px;
+    margin-bottom: 52px;
+}
 
 .img-container{
-    margin: 27px;
+    
 }
 
 

@@ -1,7 +1,7 @@
 import React,{ useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Row, Col, Button, Space, Menu, Dropdown, Drawer } from "antd";
+import { Row, Col, Button, Space, Menu, Dropdown, Drawer, Popover } from "antd";
 import { HeaderContainer } from "./header.styles";
 import { useRouter } from "next/router";
 
@@ -33,31 +33,31 @@ const HeaderComponent = () => {
 
   const menu = (
     <Menu>
-      <Menu.Item onClick={()=>{
+      <Menu.Item  className="popover-item" onClick={()=>{
         push(menuUrl.designWeb)
         onClose()
       }}>
         تصميم موقع الكترونى
       </Menu.Item>
-      <Menu.Item onClick={()=>{
+      <Menu.Item className="popover-item" onClick={()=>{
         push(menuUrl.E_Commerce)
         onClose()
       }}>
         تصميم المتاجر الالكترونية
       </Menu.Item>
-      <Menu.Item onClick={()=>{
+      <Menu.Item className="popover-item" onClick={()=>{
         push(menuUrl.mobilDesign)
         onClose()
       }}>
         تصميم التطبيقات
       </Menu.Item>
-      <Menu.Item onClick={()=>{
+      <Menu.Item className="popover-item" onClick={()=>{
         push(menuUrl.sedignId)
         onClose()
       }}>
         تصميم الهوية التجارية الكاملة
       </Menu.Item>
-      <Menu.Item onClick={()=>{
+      <Menu.Item className="popover-item" onClick={()=>{
         push(menuUrl.marketing)
         onClose()
       }}>
@@ -155,9 +155,10 @@ const HeaderComponent = () => {
               <Link href={menuUrl.ourProducts} passHref>
                 <span className="MenueContent">منتجاتنا</span>
               </Link>
-              <Dropdown overlay={menu} placement="bottomLeft" arrow>
-                <span className="MenueContent"> خدمتنا&#709;</span>
-              </Dropdown>
+              <Popover content={menu} placement="bottomRight" trigger="click" >
+                <span className="MenueContent">خدمتنا <img src={pathname=="/" ? "/static/Logos/chevron-down.svg" : "/static/Logos/chevron-down (1).svg"} alt="" className="arr-down"/></span>
+                
+              </Popover>
 
               <Link href={menuUrl.portfile} passHref>
                 <span className="MenueContent">سابقة اعمالنا</span>
@@ -169,6 +170,14 @@ const HeaderComponent = () => {
                 <span className="MenueContent">تواصل معنا</span>
               </Link>
             </Space>
+          </Col>
+          <Col className="lan-prop">
+            <span className="lang-stl">English</span>
+            <img
+              src={ pathname == "/"? "/static/Logos/globe.svg" : "/static/Logos/globe (1).svg"}
+              alt=""
+              style={{ marginRight: "4px" }}
+            />
           </Col>
         </Row>
       </div>
