@@ -26,48 +26,48 @@ const ShopCom = () => {
     centerMode: true,
     variableWidth: true,
 
-    responsive: [
-      {
-        breakpoint: 1800,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 760,
-        settings: {
-          slidesToShow: 3,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 573,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-        },
-      },
-    ],
+    // responsive: [
+    //   {
+    //     breakpoint: 1800,
+    //     settings: {
+    //       slidesToShow: 4,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 1440,
+    //     settings: {
+    //       slidesToShow: 4,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       centerMode: true,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 760,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       centerMode: true,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 573,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       centerMode: true,
+    //     },
+    //   },
+    // ],
   };
 
 
   return (
     <ServicesContainer>
       <div className="intro-container">
-        <Typography>
+        <Typography style={{marginBottom:'80px'}}>
           <Title className="intro-header"> تصميم المتاجر الالكترونية</Title>
           <Paragraph className="intro-desc">
             الآن يمكنك إدارة تجارتك الإلكترونية سواء كنت صاحب نشاط تجاري كبير
@@ -79,7 +79,7 @@ const ShopCom = () => {
             حركة البيع ..
           </Paragraph>
         </Typography>
-        <Carousel {...settings}>
+        <Carousel {...settings} slidesToShow={4}>
           {projects.map((target) => (
             <CarouselItem key={target.id}>
               <Link href={`/portfile/${target.id}`}>
@@ -88,6 +88,7 @@ const ShopCom = () => {
             </CarouselItem>
           ))}
         </Carousel>
+        
       </div>
       <div className="row-container">
         <Typography>

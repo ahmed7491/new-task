@@ -39,6 +39,11 @@ export const FooterContainer = styled.footer`
     line-height: 24px;
     margin-top: 24px;
     max-width: 250px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+    
   }
   .headerItems {
     margin-bottom: 20px;

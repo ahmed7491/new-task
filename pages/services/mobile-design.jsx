@@ -27,41 +27,41 @@ const DesignMob = () => {
         centerMode: true,
         variableWidth: true,
     
-        responsive: [
-          {
-            breakpoint: 1800,
-            settings: {
-              slidesToShow: 4,
-            },
-          },
-          {
-            breakpoint: 1440,
-            settings: {
-              slidesToShow: 4,
-            },
-          },
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              centerMode: true,
-            },
-          },
-          {
-            breakpoint: 760,
-            settings: {
-              slidesToShow: 3,
-              centerMode: true,
-            },
-          },
-          {
-            breakpoint: 573,
-            settings: {
-              slidesToShow: 1,
-              centerMode: true,
-            },
-          },
-        ],
+        // responsive: [
+        //   {
+        //     breakpoint: 1800,
+        //     settings: {
+        //       slidesToShow: 4,
+        //     },
+        //   },
+        //   {
+        //     breakpoint: 1440,
+        //     settings: {
+        //       slidesToShow: 4,
+        //     },
+        //   },
+        //   {
+        //     breakpoint: 1024,
+        //     settings: {
+        //       slidesToShow: 3,
+        //       centerMode: true,
+        //     },
+        //   },
+        //   {
+        //     breakpoint: 760,
+        //     settings: {
+        //       slidesToShow: 3,
+        //       centerMode: true,
+        //     },
+        //   },
+        //   {
+        //     breakpoint: 573,
+        //     settings: {
+        //       slidesToShow: 1,
+        //       centerMode: true,
+        //     },
+        //   },
+        // ],
       };
 
     return (

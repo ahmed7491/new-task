@@ -251,4 +251,27 @@ export const AboutContainer = styled.div`
       text-align: center;
     }
   }
+  .term-header{
+    font-size: 24px;
+    font-weight: 400;
+    white-space: pre-line;
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+  .term-detail-header{
+    font-weight: bold;
+    font-size: 24px;
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
 `;

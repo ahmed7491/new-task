@@ -350,6 +350,59 @@ export const ServicesContainer = styled.div`
     padding-top: 154px;
     margin-top: 154px;
   }
+  .ant-carousel{
+    @media screen and (max-width: 1440px) {
+      width: 1024px;
+      height:261px ;
+      overflow: hidden;
+    }
+    @media screen and (max-width: 768px) {
+      width: 768px;
+      height:261px ;
+      overflow: hidden;
+    }
+    
+  }
+
+
+  // responsive: [
+    //   {
+    //     breakpoint: 1800,
+    //     settings: {
+    //       slidesToShow: 4,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 1440,
+    //     settings: {
+    //       slidesToShow: 4,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       centerMode: true,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 760,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       centerMode: true,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 573,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       centerMode: true,
+    //     },
+    //   },
+    // ],
+
+
+
 `;
 
 export const CarouselItem = styled.div`

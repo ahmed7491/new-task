@@ -92,26 +92,10 @@ const HeaderComponent = () => {
               </Link>
               </li>
               <li>
-              {/* <SubMenu key="sub"  title="خدمتنا&#709;">
-              <Menu.Item key='1'>
-      <Link href={menuUrl.designWeb} >تصميم موقع الكترونى</Link>
-    </Menu.Item>
-    <Menu.Item key='2'>
-      <Link href={menuUrl.E_Commerce}>تصميم المتاجر الالكترونية</Link>
-    </Menu.Item>
-    <Menu.Item key='3'>
-      <Link href={menuUrl.mobilDesign}>تصميم التطبيقات</Link>
-    </Menu.Item>
-    <Menu.Item key='4'>
-      <Link href={menuUrl.sedignId}>تصميم الهوية التجارية الكاملة</Link>
-    </Menu.Item>
-    <Menu.Item key='5'>
-      <Link href={menuUrl.marketing}>التسويق الالكترونى</Link>
-    </Menu.Item>
-              </SubMenu> */}
               <Dropdown overlay={menu} placement="bottomLeft" arrow>
-                <p> خدمتنا&#709;</p>
+                <p> خدمتنا<img src="/static/Logos/chevron-down (1).svg"alt="" className="arr-down"/></p> 
               </Dropdown>
+            
               </li>
               <li onClick={onClose}>
               <Link href={menuUrl.portfile} passHref>
